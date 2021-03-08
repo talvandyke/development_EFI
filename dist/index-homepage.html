@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Title -->
+<title>EFI - Electronics for imaging</title>
+
+<!-- Favicon -->
+<link rel="icon" href="###">
+
+<!-- Stylesheet -->
+
+<link rel="stylesheet" href="efi.css">
+    <link rel="stylesheet" href="style.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600&display=swap" rel="stylesheet">
+<script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
+
+	
+	
+	
+	
+<!-- Munchkin: begin --> 
+<script type="text/javascript">
+  if (window.location.host.toLowerCase() === "go.efi.com" || window.location.host.toLowerCase() === "www.go.efi.com") {
+      if (Cookies.get("go_efi") != 'y' ||
+          (Cookies.get("go_efi") == 'y' && Cookies.get("go_efi_consent") == "allow")) {
+          (function () {
+              var didInit = false;
+              function initMunchkin() {
+                  if (didInit === false) {
+                      didInit = true;
+                      Munchkin.init('559-INV-406', { "domainLevel": 3 });
+                  }
+              }
+              var s = document.createElement('script');
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = 'https://munchkin.marketo.net/munchkin.js';
+              s.onreadystatechange = function () {
+                  if (this.readyState == 'complete' || this.readyState == 'loaded') {
+                      initMunchkin();
+                  }
+              };
+              s.onload = initMunchkin;
+              document.getElementsByTagName('head')[0].appendChild(s);
+          })();
+      }
+  }
+</script>
+<script type="text/javascript" async="" src="https://munchkin.marketo.net/munchkin.js"></script>
+<!-- Munchkin: end --> 
+
+<style type="text/css">
+  @media only screen and (max-width: 600px) {
+     .carousel .img-box img  {
+         width: 70% !important;
+     height: 70% !important;
+     display: block;
+     } 
+  } 
+ .row:before, .row:after {display: none !important;} 
+	.-bg-neutral1 {
+  background-color: #F7F7F7
+}
+	.-fg-text {
+  color: #1B1B1B
+}
+	
+	.title {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 400
+}
+@media (min-width: 70rem) {
+  .title {
+    font-size: 2.25rem;
+    line-height: 2.5rem
+  }
+}
+	.title {
+  margin-bottom: 0rem;
+  margin-top: 0;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: normal
+}
+	
+	.text-part-component .subtitle-lines-wrapper .subtitle-line {
+    font-size: 22px;
+    margin-bottom: 0px;
+		display: block;}
+	h1{
+		font-size:35px;
+		
+	}
+	h1::after{
+		content: "";
+    width: 100px;
+    position: absolute;
+    margin: 0 auto;
+    height: 0px;
+    background: transparent;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+	}
+	
+	.companies-with-logos-component .images-gallery-row .image-gallery .social-proof-gallery-picture img {
+    height: 60px;
+}
+	.picture-component.blur-image.jsx-4212101279 img.jsx-4212101279 {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+	.companies-with-logos-component{position:relative;}.companies-with-logos-component .images-gallery-row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:space-evenly;-webkit-justify-content:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;padding:24px 40px;}.companies-with-logos-component .images-gallery-row .image-gallery .social-proof-gallery-picture img{height:60px;}.companies-with-logos-component .signup-wrapper{margin-top:48px;}@media (max-width:991px){.companies-with-logos-component .signup-wrapper{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}}@media (max-width:768px){.companies-with-logos-component .images-gallery-row .image-gallery{padding:8px;}}
+	.base-layout-segment-component.jsx-1733973366{box-sizing:content-box;}.base-layout-segment-component.jsx-1733973366 .segment-content-container.jsx-1733973366{margin:auto;}.base-layout-segment-component.jsx-1733973366 .segment-content-container.jsx-1733973366:not(.full-width){max-width:1050px;}@media (max-width:1050px){.base-layout-segment-component.jsx-1733973366{padding:0 24px;}}
+	.images-gallery-row.jsx-160764463 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+	
+	.boxed-btn4 {
+    background:  rgb(233, 188, 38) !important;
+    color: #fff;
+    display: inline-block;
+    padding: 13px 39px;
+  
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+		cursor: pointer;}
+	
+	
+	.popular_places_area .single_place .thumb .prise {
+  position: absolute;
+  background: rgb(233, 188, 38) !important;
+  padding: 3px 18px 4px 18px;
+  display: inline-block;
+  top: 20px;
+  left: 20px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+  color: #fff;
+  font-size: 16px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+	.popular_places_area .single_place .place_info h4 {
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(233, 188, 38) !important;
+    margin-bottom: 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+	.popular_places_area .single_place .place_info {
+    padding: 10px 20px 25px 20px;
+}
+	.popular_places_area .single_place:hover {
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+	.popular_places_area .single_place {
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+	.popular_places_area .single_place:hover .thumb .prise {
+    background: #009bd2 !important;
+		text-decoration: none !important;
+}
+	.popular_places_area .single_place:hover .place_info h4 {
+    color: #009bd2 !important;
+		text-decoration: none !important;
+}
+	a:hover{text-decoration: none !important;}
+	.akame-btn:focus, .akame-btn:hover {
+    border-color: rgb(233, 188, 38) !important;;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: rgb(233, 188, 38) !important;
+    color: #ffffff;
+    -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+    box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+}
+ </style>
+	
+</head>
+
+<body>
+<!-- Preloader -->
+<div id="preloader">
+  <div class="loader"></div>
+</div>
+<!-- /Preloader --> 
+
+<!-- Header Area Start -->
+<header class="header-area pb-5"> 
+  
+  <!-- Top Header Area End --> 
+  
+  <!-- Main Header Start -->
+  <div class="main-header-area navbar-fixed-top navbar-light" style="background-color:#ffffff;">
+    <div class="classy-nav-container breakpoint-off">
+      <div class="container"> 
+		  
+		 
+	
+		  
+        <!-- Classy Menu -->
+        <nav class="classy-navbar justify-content-between" id="akameNav"> 
+          
+          <!-- Logo --> 
+          <a class="nav-brand" href="index.html"><img src="img/efi_logo_100x65.png" alt=""></a> 
+          
+          <!-- Navbar Toggler -->
+          <div class="classy-navbar-toggler"> <span class="navbarToggler"><span></span><span></span><span></span></span> </div>
+          
+			
+			
+          <!-- Menu -->
+          <div class="classy-menu"> 
+            <!-- Menu Close Button -->
+            <div class="classycloseIcon">
+              <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+            </div>
+            <!-- Nav Start -->
+            <div class="classynav">
+              <ul id="nav">
+                <li ><a href="#" style="font-size:14px !important; text-decoration: none; ">Industries</a>
+                  <ul class="dropdown">
+                    <li><a href="https://www.efi.com/industries/commercial-printing/">- Commercial Printing</a></li>
+                    <li><a href="https://www.efi.com/industries/digital-production-franchise-quick-print/">- Franchise/Quick Print</a></li>
+                    <li><a href="https://www.efi.com/industries/labels/">- Labels</a></li>
+                    <li><a href="https://www.efi.com/industries/flexible-packaging-extrusion/">- Flexible Packaging/ Extrusion</a></li>
+                    <li><a href="https://www.efi.com/industries/folding-carton/">- Folding Carton</a></li>
+                    <li><a href="https://www.efi.com/industries/corrugated/">- Corrugated</a></li>
+                    <li><a href="https://www.efi.com/industries/screen-printing/">- Screen Printing</a></li>
+                    <li><a href="https://www.efi.com/industries/sign-and-display/">- Sign and Display</a></li>
+                    <li><a href="https://www.efi.com/industries/general-business-printing/">- General Business Printing</a></li>
+                    <li><a href="https://www.efi.com/industries/government-university/">- Government/University</a></li>
+                    <li><a href="https://www.efi.com/industries/corporate-reprographics-in-plant/">- Corporate Reprographics/In Plant</a></li>
+                    <li><a href="https://www.efi.com/industries/creative-agency-color-professional/">- Creative Agency</a></li>
+                    <li><a href="https://www.efi.com/industries/photo-and-fine-art/">- Photo and Fine Art</a></li>
+                    <li><a href="https://www.efi.com/industries/publications-book-printing/">- Publication/Book Printing</a></li>
+                    <li><a href="https://www.efi.com/industries/ceramic-tile-manufacturing/">- Ceramic Tile Manufacturing</a></li>
+                    <li><a href="https://www.efi.com/industries/building-materials/">- Build Materials</a></li>
+                    <li><a href="https://www.efi.com/products/productivity-software/fulfillment/">- Fulfillment</a></li>
+                    <li><a href="https://www.efi.com/industries/textiles/">- Textiles</a></li>
+                </ul>
+            </li>
+          
+                <li ><a href="#" style="font-size:14px !important; text-decoration: none; ">Products</a>
+                  <ul class="dropdown">
+                    <li><a href="https://www.efi.com/products/productivity-software/productivity-suite/">- Productivity Suite</a></li>
+                    <li><a href="https://www.efi.com/products/productivity-software/optitex-textile-3d-design/">- Optitex Textile 3D Design</a></li>
+                    <li><a href="https://www.efi.com/products/productivity-software/solutions/management-mis-erp/">- Management (MIS/ERP)</a></li>
+                    <li><a href="https://www.efi.com/products/productivity-software/efi-marketdirect-customer-engagement-platform/efi-marketdirect-storefront/overview/">- eCommerce/Web-to-Print</a></li>
+                    <li><a href="https://www.efi.com/products/productivity-software/efi-marketdirect-customer-engagement-platform/efi-marketdirect-cross-media/overview/">- Marketing</a></li>
+                    <li><a href="https://www.efi.com/products/productivity-software/fulfillment/efi-printstream-fulfillment/overview/">- Fulfillment</a></li>
+                    <li><a href="https://www.efi.com/products/productivity-software/business-intelligence/efi-business-intelligence/overview/">- Business Intelligence</a></li>
+                    <li><a href="https://www.efi.com/products/productivity-software/shop-floor-data-collection/efi-auto-count/overview/">- Shop Floor Data Collection</a></li>
+                    <li><a href="https://www.efi.com/products/productivity-software/solutions/scheduling/">- Scheduling</a></li>
+                    <li><a href="https://www.efi.com/products/productivity-software/shipping/efi-smartlinc-shipping/overview/">- Shipping</a></li>
+                    <li><a href="https://www.efi.com/products/productivity-software/business-consulting/">- Business Consulting</a></li>
+                    <li><a href="https://www.efi.com/products/productivity-software/software-a-z-quick-finder/">- Software A-Z Quick Finder</a></li>
+                    <li><a href="https://www.efi.com/products/productivity-software/efi-marketdirect-customer-engagement-platform/">- MarketDirect Customer Engagement Platform</a></li>
+                </ul>
+            
+                </li>
+                <li ><a href="#" style="font-size:14px !important; text-decoration: none; ">Support and Downloads</a>
+                  <ul class="dropdown">
+                    <li><a href="https://communities.efi.com/s/">- EFI Communities</a></li>
+                    <li><a href="https://www.efi.com/support-and-downloads/product-support/">- Product Support</a></li>
+                    <li><a href="https://www.efi.com/support-and-downloads/downloads/">- Downloads</a></li>
+                    <li><a href="https://www.efi.com/support-and-downloads/fiery-free-software-trials/">- Fiery Free Software Trials</a></li>
+                </ul>
+            </li>
+          
+                <li ><a href="#" style="font-size:14px !important; text-decoration: none; ">Training & Services</a>
+                  <ul class="dropdown">
+                    <li><a href="https://www.efi.com/training-and-services/professional-and-contract-services/">- Professional & Contract Services</a></li>
+                    <li><a href="https://www.efi.com/training-and-services/training/">- Training</a></li>
+                    <li><a href="https://www.efi.com/training-and-services/additional-support-offerings/fiery-advantage-solutions-and-training-fast/">- Additional Support Offerings</a></li>
+                </ul>
+            </li>
+                <li ><a href="#" style="font-size:14px !important; text-decoration: none; ">Resources</a>
+                  <ul class="dropdown">
+                    <li><a href="https://www.efi.com/resources/documents/">- Documents</a></li>
+                    <li><a href="https://www.efi.com/resources/videos/">- Video Library</a></li>
+                    <li><a href="https://www.efi.com/resources/fiery-how-to-guides-and-docs/">- Fiery How-to-Guides & Docs</a></li>
+                    <li><a href="https://www.efi.com/resources/fiery-online-resources/">- Fiery Online Resources</a></li>
+                    <li><a href="https://www.efi.com/about-efi/events/webinars-calendar/">- Webinar Calendars</a></li>
+                  </ul>
+            </li>
+                <li><a href="#" style="font-size:14px !important; text-decoration: none; ">About EFI</a>
+                  <ul class="dropdown">
+                    <li><a href="https://www.efi.com/about-efi/who-is-efi/">- Who is EFI</a></li>
+                    <li><a href="https://www.efi.com/about-efi/leadership/">- Leadership</a></li>
+                    <li><a href="http://ir.efi.com">- Investor Relations</a></li>
+                    <li><a href="https://www.efi.com/about-efi/newsroom/">- Newsroom</a></li>
+                    <li><a href="https://www.efi.com/about-efi/events/upcoming-events/">- Events</a></li>
+                    <li><a href="https://www.efi.com/about-efi/careers/">- Careers</a></li>
+                    <li><a href="https://www.efi.com/about-efi/contact-us/">- Contact Us</a></li>
+                    <li><a href="https://www.efi.com/about-efi/partners/">- Partners</a></li>
+                </ul>
+            </li>
+                
+            </ul>
+            </div>
+            <!-- Nav End --> 
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Header Area End --> 
+    <!-- Welcome Area Start -->
+   
+    <!-- Welcome Area End -->
+	<section class="akame-service-area section-padding-80-0">
+        <div class="container">
+
+                <div class="row">
+                        <div class="col-md-6">
+<h1 class="pb-0 mb-0 text-left"><span style="color:#333" class=" title-line first pb-0">EFI Product Solutions </span></h1>
+                        <h3 class="text-left pt-0 "><span style="color:#333" class="pt-0 subtitle-line">Solutions tailored for your industry</span><span style="color:#333" class=" subtitle-line"></span></h3>
+							<p style="font-size:14px; line-height: 18px;">EFI MarketDirect Cross Media is a customer communication and marketing campaign solution. It’s designed to make engaging with your customers both existing and new, easy and hassle free. It achieves this by providing an intuitive yet powerful user experience where you can quickly create rich personalized communications across nearly any medium including; Email, Web, Print, Mobile and Social Media.</p>
+
+                            
+                        <div class="text-center">
+							<div class="btn-toolbar pt-4 text-center" data-toggle="buttons" > 
+                  <div class="text-center" style="padding-bottom:25px; padding-right:25px;"><a href="MarketDirect VDP" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff;text-decoration: none;font-family:Helvetica Neue,Helvetica,Arial,sans-serif; background-color:#e9bc26 !important;">Contact Us</a></div>
+								 <a href="https://www.efi.com/support-and-downloads/product-support/" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff; text-decoration: none;color:#ffffff;text-decoration: none;font-family:Helvetica Neue,Helvetica,Arial,sans-serif; background-color:#e9bc26 !important;">Existing Customers</a>
+                  
+							</div></div>
+					</div>
+					<div class="col-md-6">
+    
+<picture class="jsx-4212101279 picture-component image-part-wrapper"><img alt="" class="jsx-4212101279 img-fluid pt-5 pb-5" src="img/1_6_Main.gif" width="400"/></picture>
+ 
+					</div></div>
+			</div>
+					</section>
+	
+	
+	<div style="background-color:#f9f9f9;padding-top:;padding-bottom:" class="jsx-1733973366 base-layout-segment-component">
+          <div class="jsx-1733973366 segment-content-container">
+            <div class="jsx-1855150697 companies-with-logos-component">
+              <div class="jsx-1855150697 paragraph-with-logos-wrapper">
+                <div class="jsx-2254569544 paragraph-with-logos-component">
+                  <div class="jsx-2254569544 image-gallery-wrapper">
+                    <div class="images-gallery">
+                      <div class="jsx-160764463 images-gallery-row">
+                        <div class="jsx-1848455873 image-gallery">
+                          <picture class="jsx-4212101279 picture-component social-proof-gallery-picture"><img alt="" class="jsx-4212101279 " src="img/logos/UPS-Store-logo.png"/></picture>
+                        </div>
+                        <div class="jsx-1848455873 image-gallery">
+                          <picture class="jsx-4212101279 picture-component social-proof-gallery-picture"><img alt="" class="jsx-4212101279 " src="img/logos/prime-group.png"/></picture>
+                        </div>
+                        <div class="jsx-1848455873 image-gallery">
+                          <picture class="jsx-4212101279 picture-component social-proof-gallery-picture"><img alt="" class="jsx-4212101279 " src="img/logos/funky-pigeon.png"/></picture>
+                        </div>
+                        <div class="jsx-1848455873 image-gallery">
+                          <picture class="jsx-4212101279 picture-component social-proof-gallery-picture"><img alt="" class="jsx-4212101279 " src="img/logos/sir-speedy-logo.png"/></picture>
+                        </div>
+                        
+                        <div class="jsx-1848455873 image-gallery">
+                          <picture class="jsx-4212101279 picture-component social-proof-gallery-picture"><img alt="" class="jsx-4212101279 " src="img/logos/promotional-springs-logo.png"/></picture>
+                        </div>
+                        <div class="jsx-1848455873 image-gallery">
+                          <picture class="jsx-4212101279 picture-component social-proof-gallery-picture"><img alt="" class="jsx-4212101279 " src="img/logos/tukaiz.png"/></picture>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+	
+	
+    <!-- Our Service Area Start -->
+    <section class="akame-service-area section-padding-80-0">
+        <div class="container">
+
+               
+			   <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading ">
+                            <h3 class="text-left">Intuitive and Powerful Campaign Design</h3>
+                        <p>EFI MarketDirect Cross Media is a customer communication and marketing campaign solution. It’s designed to make engaging with your customers both existing and new, easy and hassle free. It achieves this by providing an intuitive yet powerful user experience where you can quickly create rich personalized communications across nearly any medium including; Email, Web, Print, Mobile and Social Media.</p>
+
+                            <p>Using MarketDirect, your team can connect your customer data to your communications and personalize the content and conversations. Personalized content can include Graphics, Images, Text, pURLs and QR Codes – all integrated enabling you to improve engagement and connect with your clients.</p>
+						
+
+
+
+                    </div>
+                </div>
+            </div>
+                <div class="row" style="margin-bottom: -20px;">
+
+                        <!-- Single Service Area -->
+                        <div class="col-12 col-sm-12 col-lg-4">
+                            <div class="single-service-area mb-80 wow fadeInUp " data-wow-delay="200ms">
+                                <img src="img/homepage_icons/EPS_CommercialPrinting_icon.png" width="125" alt="">
+                                <h4>Commercial Printing</h4>
+                                <p>Ut enim ad minim veniam, quis trud exercitation...</p>
+								
+								<!-- Button trigger modal -->
+								<div class="pt-3">	
+								<button data-toggle="modal" data-target="#myModal" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff; text-decoration: none;color:#ffffff;text-decoration: none;font-family:Helvetica Neue,Helvetica,Arial,sans-serif; background-color:#e9bc26 !important;">Select One</button></div>
+
+
+
+
+
+                            </div>
+							
+                        </div>
+        
+                        <!-- Single Service Area -->
+                        <div class="col-12 col-sm-12 col-lg-4" style="padding-bottom:0px;">
+                            <div class="single-service-area mb-80 wow fadeInUp" data-wow-delay="400ms" >
+                                <img src="img/homepage_icons/EPS_LocalSuites_icon.png" width="125" alt="">
+                                <h4>Local Suites</h4>
+                                <p>Consectetur adipisicing elit, sed doe eiusmod.</p>
+                            </div>
+                        </div>
+        
+                        <!-- Single Service Area -->
+                        <div class="col-12 col-sm-12 col-lg-4">
+                            <div class="single-service-area mb-80 wow fadeInUp" data-wow-delay="600ms" >
+                                <img src="img/homepage_icons/EPS_Corrugated_icon.png" width="125" alt="">
+                                <h4>Corrugated Manufacturing</h4>
+                                <p>Nemo enim ipsam voluptatem quia voluptas</p>
+                            </div>
+                        </div>
+        
+                     
+        
+                    </div>
+			<div class="row" style="margin-bottom: -20px;">
+				
+				   <!-- Single Service Area -->
+                        <div class="col-12 col-sm-12 col-lg-4">
+                            <div class="single-service-area mb-80 wow fadeInUp" data-wow-delay="800ms" >
+                                <img src="img/homepage_icons/EPS_Publication_icon.png" width="125" alt="">
+                                <h4>Publication</h4>
+                                <p>Ut enim ad minim veniam, quis trud exercitation...</p>
+                            </div>
+                        </div>
+
+                        <!-- Single Service Area -->
+                        <div class="col-12 col-sm-12 col-lg-4">
+                            <div class="single-service-area mb-80 wow fadeInUp" data-wow-delay="200ms">
+                                <img src="img/homepage_icons/EPS_DigitalPrint-QuickPrint_icon.png" width="125" alt="">
+                                <h4>Creative Agency/Quick Print</h4>
+                                <p>Ut enim ad minim veniam, quis trud exercitation...</p>
+                            </div>
+                        </div>
+        
+                        <!-- Single Service Area -->
+                        <div class="col-12 col-sm-12 col-lg-4" style="padding-bottom:0px;">
+                            <div class="single-service-area mb-80 wow fadeInUp" data-wow-delay="400ms" >
+                                <img src="img/homepage_icons/EPS_Packaging_icon.png" width="125" alt="">
+                                <h4>Packaging</h4>
+                                <p>Consectetur adipisicing elit, sed doe eiusmod.</p>
+                            </div>
+                        </div>
+        
+                        
+        
+                    </div>
+		</div>
+    </section>
+    <!-- Our Service Area End -->
+
+
+    
+
+  <section class="akame-service-area "  style="background-color: #e9bc26;">
+    <div class="container" >
+  <div class="row">
+    <div class="col-md-12 col-center m-auto">
+        
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                
+                
+            </ol>   
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+                <div class="item carousel-item active">
+                  <div class="img-box"><img src="img/logos/freeport-press-logo.png" alt=""></div>
+                  <blockquote class="testimonial">PrintFlow is phenomenal. You can see every piece of equipment in real time, and you can include rules that PrintFlow adds to its own logic to schedule jobs in a manner that will even save wash-ups.</blockquote>
+                  <p class="overview"><b>James Pilcher</b>, Vice President of Manufacturing and General Manager, Freeport Press</p>
+                </div>
+                <div class="item carousel-item">
+                  <div class="img-box"><img src="img/logos/classic-logo.png" alt=""></div>
+                  <blockquote class="testimonial">PrintFlow allows us to manage our constraints and see the bottlenecks so we know exactly where jobs are and can keep our customers happy. We also achieve greater throughput thanks to PrintFlow.</blockquote>
+                  <p class="overview"><b>Rick Kraushaar</b>, Vice President of Operations, Classic Graphics
+                              </p>
+                </div>
+                
+              </div>
+            <!-- Carousel controls -->
+            <!-- <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                <i class="fa fa-angle-right"></i>
+            </a> -->
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+ 	
+	 
+<div class="pt-5 ">
+
+
+
+<div class="-bg-neutral1" style="display: block; position: relative; top: -1px;">
+  <img src="img/divider-gray-final.svg" alt="EFI">
+</div></div>
+	<div class="-bg-neutral1 -fg-text " style="position:relative;top:-1px;" >
+		<div class="container">
+            <div class="row">
+
+	<div class="flex -xs-stack -pad -wrap-800">
+
+            <div>
+<div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+			    <div class="pt-5 pb-5"><p style="text-align: left;"><span class="title">Ask the EFI Community </span></p>
+<p style="text-align: left;">Find solutions, share ideas, and discuss EFI products with our global community of experts. Connect, learn, and browse through our knowledge-based articles, forum posts and how-to guides.<br><br>
+EFI Communities allows you to engage with EFI customers and representatives whenever you want, wherever you want through a responsive and intuitive platform.<br><br>
+EFI Communities lets you access a knowledge base of thousands of articles, providing a “one-stop-shop” if you want to want to search for solutions that meet your business challenges.</p></div>
+				<div class="btn-toolbar " data-toggle="buttons" style="justify-content: left;"> 
+              <div style="padding-bottom:25px; padding-right:25px;"><a href="https://communities.efi.com/s/?language=en_US" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff;text-decoration: none;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;background-color:#e9bc26 !important;">Join EFI Communitites</a></div>
+              
+      </div>
+				</div>
+				<div class="col-lg-5">
+			    <div class="pt-5 pb-5"><img src="img/EFI_Community_480.png" class="img-fluid"></div>
+				
+				</div>
+	</div>
+				</div>
+
+            </div>
+
+	</div>
+
+			</div>
+		</div>
+	
+	 <section class="pt-5 pb-5" >
+    <div class="container">
+      <div class="row">
+  <div class="container" >
+    <div class="border-top mt-3"  ></div>
+  </div>
+  </div></div></section>
+	
+<div class="popular_places_area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section_title text-center mb_70 pb-5">
+                        <h2 class="text-center" style=" font-size:28px">EFI Resource Center</h2>
+                        <p class="pt-4">Here is everything you need to do more with your Fiery<sup>&reg;</sup> products: quick online assistance, software downloads, training resources, and more.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img src="img/place/1.png" alt="">
+                            <a href="#" class="prise">Midmarket</a>
+                        </div>
+                        <div class="place_info">
+                            <a href="#"><h4>Multi-Craft</h4></a>
+                            <p>Case Study</p>
+                            <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center">
+									<a href="#" class="prise">Download Now &raquo;</a>
+                                    
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img src="img/place/2.png" alt="">
+                            <a href="#" class="prise">Radius</a>
+                        </div>
+                        <div class="place_info">
+                            <a href="#"><h4>Phoenix Lithographing</h4></a>
+                            <p>Case Study</p>
+							<div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center">
+									<a href="#" class="prise">Download Now &raquo;</a>
+                                    
+                                </span>
+                                
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img src="img/place/3.png" alt="">
+                            <a href="#" class="prise">Printflow</a>
+                        </div>
+                        <div class="place_info">
+                            <a href="#"><h4>Rex Three</h4></a>
+                            <p>Case Study</p>
+							<div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center">
+									<a href="#" class="prise">Download Now &raquo;</a>
+                                    
+                                </span>
+                                
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img src="img/place/4.png" alt="">
+                            <a href="#" class="prise">PrintStream</a>
+                        </div>
+                        <div class="place_info">
+                            <a href="#"><h4>Red Line Graphics</h4></a>
+                            <p>Case Study</p>
+							<div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center">
+									<a href="#" class="prise">Download Now &raquo;</a>
+                                    
+                                </span>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img src="img/place/5.png" alt="">
+                            <a href="#" class="prise">Monarch</a>
+                        </div>
+                        <div class="place_info">
+                            <a href="#"><h4>Southwest Precision</h4></a>
+                            <p>Case Study</p>
+							<div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center">
+									<a href="#" class="prise">Download Now &raquo;</a>
+                                    
+                                </span>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img src="img/place/6.png" alt="">
+                            <a href="#" class="prise">iQuote</a>
+                        </div>
+                        <div class="place_info">
+                            <a href="#"><h4>Worth Higgins</h4></a>
+                            <p>Case Study</p>
+							<div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center">
+									<a href="#" class="prise">Download Now &raquo;</a>
+                                    
+                                </span>
+                                
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img src="img/place/6.png" alt="">
+                            <a href="#" class="prise">iQuote</a>
+                        </div>
+                        <div class="place_info">
+                            <a href="#"><h4>Worth Higgins</h4></a>
+                            <p>Case Study</p>
+							<div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center">
+									<a href="#" class="prise">Download Now &raquo;</a>
+                                    
+                                </span>
+                                
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img src="img/place/6.png" alt="">
+                            <a href="#" class="prise">iQuote</a>
+                        </div>
+                        <div class="place_info">
+                            <a href="#"><h4>Worth Higgins</h4></a>
+                            <p>Case Study</p>
+							<div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center">
+									<a href="#" class="prise">Download Now &raquo;</a>
+                                    
+                                </span>
+                                
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img src="img/place/6.png" alt="">
+                            <a href="#" class="prise">iQuote</a>
+                        </div>
+                        <div class="place_info">
+                            <a href="#"><h4>Worth Higgins</h4></a>
+                            <p>Case Study</p>
+							<div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center">
+									<a href="#" class="prise">Download Now &raquo;</a>
+                                    
+                                </span>
+                                
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+ 
+                        
+
+
+
+
+<!-- Cant Find Document Area Start -->
+
+    <div class="container -bg-neutral1">
+      <div class="row">
+        <div class="col-12"> 
+          <!-- Section Heading -->
+          <div class="section-heading "  style="margin-bottom:0 !important;">
+            <h3 style="padding-bottom:0; color: #e9bc26;" >Can't Find A Document?
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="row" >
+        <div class="col-12"> 
+          <!-- Section Heading -->
+          <div class="section-heading " style="margin-bottom:0 !important;">
+            
+            <p style="padding-top:0;">Can't find the documentation you are looking for?  <a href="https://www.efi.com/resources/" target="_blank">Click here</a> to access and search our comprehensive resource library.
+            </p>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Cant Find Document Area End -->
+
+
+
+
+
+
+  <!-- Footer Area Start -->
+  <footer class="footer wow fadeInDown" style="background-color: #646468; color:#ffffff; " >
+    <div class="container" style=" padding-top:15px;padding-bottom:10px">
+  <div class="row">
+        <div class="col-lg-8 col-sm-8 footer-links text-left footer-text" style="text-align: left">
+        
+          <p class="footer-text" style="color:#ffffff"><a href="https://www.efi.com/legal/privacy/"  style="color:#ffffff">Privacy Policy</a>  &nbsp;|&nbsp;  <a href="https://www.efi.com/legal/terms-of-use/"  style="color:#ffffff">Terms of Use</a>  &nbsp;|&nbsp;  <a href="https://www.efi.com/about-efi/contact-us/"  style="color:#ffffff">Contact Us</a>
+        <a href="https://www.efi.com/legal/copyright/"  style="color:#ffffff">©2020 Electronics For Imaging, Inc. All Rights Reserved.</a></p> 
+      </div>
+      <div class="col-lg-4 col-sm-4" style="text-align:right;margin-bottom:15px !important;">
+          
+       <a href="https://www.facebook.com/EFIPrint/" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; display: inline-block; margin: 0 6px 0 6px;"><img alt="Facebook Icon" src="https://www.efi.com/library/efi/images/shared/icons/social_media/facebook_icon.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; line-height: 100%; width: 20px; height: auto; display: inline-block; border-width: 0; border-style: none;"></a>
+<a href="https://www.linkedin.com/company/efiprint" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; display: inline-block; margin: 0 6px 0 6px;"><img alt="LinkedIn Icon" src="https://www.efi.com/library/efi/images/shared/icons/social_media/linkedin_icon.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; line-height: 100%; width: 20px; height: auto; display: inline-block; border-width: 0; border-style: none;"></a>
+<a href="https://twitter.com/EFIPrint" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; display: inline-block; margin: 0 6px 0 6px;"><img alt="Twitter Icon" src="https://www.efi.com/library/efi/images/shared/icons/social_media/twitter_icon.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; line-height: 100%; width: 20px; height: auto; display: inline-block; border-width: 0; border-style: none;"></a>
+<a href="https://www.youtube.com/user/EFIDigitalPrintTech" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; display: inline-block; margin: 0 6px 0 6px;"><img alt="Youtube Icon" src="https://go.efi.com/rs/559-INV-406/images/EFI_Social_YouTube.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; line-height: 100%; width: 20px; height: auto; display: inline-block; border-width: 0; border-style: none;"></a>
+<a href="https://www.instagram.com/efiprint/" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; display: inline-block; margin: 0 6px 0 6px;"><img alt="Instagram Icon" src="https://go.efi.com/rs/559-INV-406/images/EFI_Social_Instagram.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; line-height: 100%; width: 20px; height: auto; display: inline-block; border-width: 0; border-style: none;"></a>
+        
+      </div>
+  </div>
+</div>
+</footer>
+<!-- End Footer Bottom -->
+	
+	
+	
+
+	
+	
+	
+	
+
+
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	
+<!-- All JS Files --> 
+<!-- jQuery --> 
+<script src="js/jquery.min.js"></script> 
+<!-- Popper --> 
+<script src="js/popper.min.js"></script> 
+<!-- Bootstrap --> 
+<script src="js/bootstrap.min.js"></script> 
+<!-- All Plugins --> 
+<script src="js/akame.bundle.js"></script> 
+<!-- Active --> 
+<script src="js/default-assets/active.js"></script>
+
+
+<style>  #PureChatWidget.purechat.purechat-bottom-right {
+  bottom: 70px !important;
+}
+</style>
+<script type="text/javascript" src="https://go.efi.com/js/stripmkttok.js"></script>
+
+<script type="text/javascript">
+	
+	$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+	</script>
+
+   
+
+	
+		
+<script type="text/javascript">
+  if (typeof MktoForms2 !== 'undefined') {
+      //add a callback to the first ready form on the page
+      MktoForms2.whenReady(function (form) {
+          if (Cookies.get("_mkto_form_submit") != undefined) {
+              //add the tracking field to be submitted
+              form.addHiddenFields({
+                  "_mkt_trk": ""
+              });
+              form.addHiddenFields({
+                  "munchkinId": ""
+              });
+
+              //clear the value during the onSubmit event to prevent tracking association
+              form.onSubmit(function (form) {
+                  form.vals({
+                      "_mkt_trk": ""
+                  });
+                  form.vals({
+                      "munchkinId": ""
+                  });
+        if (Cookies.get("go_efi") != 'y' ||
+          (Cookies.get("go_efi") == 'y' && Cookies.get("go_efi_consent") == "allow")) {
+          Cookies.set("_mkto_form_submit", "yes");
+                  }
+              })
+          } else {
+              //clear the value during the onSubmit event to prevent tracking association
+      form.onSubmit(function (form) {
+        if (Cookies.get("go_efi") != 'y' ||
+          (Cookies.get("go_efi") == 'y' && Cookies.get("go_efi_consent") == "allow")) {
+          Cookies.set("_mkto_form_submit", "yes");
+                }
+              })
+          }
+      })
+  }
+</script>
+	<!-- Modal -->
+<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+       
+			  <div class="row">
+				  <div class="pt-0 pb-3"><img src="img/modal-border-top.png" class="img-fluid"></div>
+				  
+          <div class="col-md-4"><img src="img/Enterprise_icon.png" class="img-fluid border border-warning rounded pb-4"  >
+				 <p class="font-bold text-center pt-5">Are you looking for Enterprise
+Commercial Printing Solutions?</p>
+			  <div class=" pt-3 pb-5 text-center"><a href="https://www.google.com" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff; text-decoration: none;color:#ffffff;text-decoration: none;font-family:Helvetica Neue,Helvetica,Arial,sans-serif; background-color:#e9bc26 !important;">More Details</a></div>
+ 
+</div>
+		   <div class="col-md-4"><img src="img/mmps_icon-01.png" class="img-fluid border border-warning rounded pb-4">
+				 <p class="font-bold text-center pt-5">Are you looking for MidMarket
+Commercial Print Solutions?</p>
+			  <div class=" pt-3 pb-5 text-center"><a href="https://www.google.com" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff; text-decoration: none;color:#ffffff;text-decoration: none;font-family:Helvetica Neue,Helvetica,Arial,sans-serif; background-color:#e9bc26 !important;">More Details</a></div>
+ 
+</div>
+		    <div class="col-md-4"><img src="img/psv_icon-01.png" class="img-fluid border border-warning rounded pb-4">
+				 <p class="font-bold text-center pt-5">Are you looking for PrintSmith
+Vision Print Solutions?</p>
+			  <div class=" pt-3 pb-5 text-center"><a href="https://www.google.com" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff; text-decoration: none;color:#ffffff;text-decoration: none;font-family:Helvetica Neue,Helvetica,Arial,sans-serif; background-color:#e9bc26 !important;">More Details</a></div>
+ 
+</div>
+		   
+		  <div class="pb-0">
+			 <img src="img/modal-border-bottom.png" class="img-fluid"></div>
+		   
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         
+      </div>
+		  
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
