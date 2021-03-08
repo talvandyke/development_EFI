@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>EFI - Electronics for imaging</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="###">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600&display=swap" rel="stylesheet">
+    <script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
+   
+<!-- Munchkin: begin --> 
+<script type="text/javascript">
+    if (window.location.host.toLowerCase() === "go.efi.com" || window.location.host.toLowerCase() === "www.go.efi.com") {
+        if (Cookies.get("go_efi") != 'y' ||
+            (Cookies.get("go_efi") == 'y' && Cookies.get("go_efi_consent") == "allow")) {
+            (function () {
+                var didInit = false;
+                function initMunchkin() {
+                    if (didInit === false) {
+                        didInit = true;
+                        Munchkin.init('559-INV-406', { "domainLevel": 3 });
+                    }
+                }
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = 'https://munchkin.marketo.net/munchkin.js';
+                s.onreadystatechange = function () {
+                    if (this.readyState == 'complete' || this.readyState == 'loaded') {
+                        initMunchkin();
+                    }
+                };
+                s.onload = initMunchkin;
+                document.getElementsByTagName('head')[0].appendChild(s);
+            })();
+        }
+    }
+  </script>
+  <script type="text/javascript" async="" src="https://munchkin.marketo.net/munchkin.js"></script>
+  <!-- Munchkin: end --> 
+    
+
+
+   
+   
+    
+   
+    <style type="text/css">
+    .parallax {
+    color: #fff;
+    
+    padding: 80px 0;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover !important;
+    transform: translateZ(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+/* Services
+================================================== */
+
+.service-heading {
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+.service-content {
+	color: #333;
+	background: #ffffff;
+	background: rgba(255,255,255,0.85);
+	padding: 30px;
+	-webkit-transition: 350ms;
+	-moz-transition: 350ms;
+	-o-transition: 350ms;
+	transition: 350ms;
+	border-radius: 2px;
+}
+
+.service-content:hover{
+	background: #fff;
+}
+
+.service-content h3 {
+	color: #333;
+	margin-top: 20px;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.service-icon {
+	height: 56px;
+	width: 100px;
+	margin-bottom: 30px;
+}
+
+.service-icon i{
+	font-size: 52px;
+}
+
+.service-content a.readmore{
+	margin-top: 10px;
+}
+
+
+/* Service Image */
+
+.service-image{
+	background: #fff;
+}
+
+.service-image .service-content{
+	padding: 0;
+}
+
+.service-image .service-content a.readmore {
+  	font-size: 12px;
+  	font-weight: 700;
+  	padding: 4px 10px;
+}
+
+.parallax1 {
+    background: url(img/parallax1.jpg) no-repeat;
+}
+.parallax-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/overaly.png);}
+
+    .video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+.lightbox {
+  background-color: fade(black, 80%);  
+  overflow: scroll;
+  position: fixed;
+  display: none;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;}
+  
+  h1 {
+    color: #333;
+    text-align: center;
+   line-height:38px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    position: relative;
+    margin: 30px 0 60px;
+}
+h1::after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    margin: 0 auto;
+    height: 3px;
+    background: #009bd2;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    margin: 30px 0 60px;
+}
+h2::after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    margin: 0 auto;
+    height: 3px;
+    background: #009bd2;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    }
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel .item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
+.carousel .item .img-box {
+    width: 300px;
+   
+    margin: 0 auto;
+    padding: 5px;
+    
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #009bd2;
+}
+.carousel .carousel-control {
+	width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.footer-text{
+  font-size:12px;
+}
+.row:before, .row:after {display: none !important;}   
+</style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        
+        <!-- Top Header Area End -->
+
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="akameNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="index.html"><img src="img/efi_logo_100x65.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+            <div class="classynav">
+                <ul id="nav">
+                  <li ><a href="#" style="font-size:14px !important; text-decoration: none; ">Industries</a>
+                    <ul class="dropdown">
+                      <li><a href="https://www.efi.com/industries/commercial-printing/">- Commercial Printing</a></li>
+                      <li><a href="https://www.efi.com/industries/digital-production-franchise-quick-print/">- Franchise/Quick Print</a></li>
+                      <li><a href="https://www.efi.com/industries/labels/">- Labels</a></li>
+                      <li><a href="https://www.efi.com/industries/flexible-packaging-extrusion/">- Flexible Packaging/ Extrusion</a></li>
+                      <li><a href="https://www.efi.com/industries/folding-carton/">- Folding Carton</a></li>
+                      <li><a href="https://www.efi.com/industries/corrugated/">- Corrugated</a></li>
+                      <li><a href="https://www.efi.com/industries/screen-printing/">- Screen Printing</a></li>
+                      <li><a href="https://www.efi.com/industries/sign-and-display/">- Sign and Display</a></li>
+                      <li><a href="https://www.efi.com/industries/general-business-printing/">- General Business Printing</a></li>
+                      <li><a href="https://www.efi.com/industries/government-university/">- Government/University</a></li>
+                      <li><a href="https://www.efi.com/industries/corporate-reprographics-in-plant/">- Corporate Reprographics/In Plant</a></li>
+                      <li><a href="https://www.efi.com/industries/creative-agency-color-professional/">- Creative Agency</a></li>
+                      <li><a href="https://www.efi.com/industries/photo-and-fine-art/">- Photo and Fine Art</a></li>
+                      <li><a href="https://www.efi.com/industries/publications-book-printing/">- Publication/Book Printing</a></li>
+                      <li><a href="https://www.efi.com/industries/ceramic-tile-manufacturing/">- Ceramic Tile Manufacturing</a></li>
+                      <li><a href="https://www.efi.com/industries/building-materials/">- Build Materials</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/fulfillment/">- Fulfillment</a></li>
+                      <li><a href="https://www.efi.com/industries/textiles/">- Textiles</a></li>
+                  </ul>
+              </li>
+            </li>
+                  <li ><a href="#" style="font-size:14px !important; text-decoration: none; ">Products</a>
+                    <ul class="dropdown">
+                      <li><a href="https://www.efi.com/products/productivity-software/productivity-suite/">- Productivity Suite</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/optitex-textile-3d-design/">- Optitex Textile 3D Design</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/solutions/management-mis-erp/">- Management (MIS/ERP)</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/efi-marketdirect-customer-engagement-platform/efi-marketdirect-storefront/overview/">- eCommerce/Web-to-Print</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/efi-marketdirect-customer-engagement-platform/efi-marketdirect-cross-media/overview/">- Marketing</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/fulfillment/efi-printstream-fulfillment/overview/">- Fulfillment</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/business-intelligence/efi-business-intelligence/overview/">- Business Intelligence</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/shop-floor-data-collection/efi-auto-count/overview/">- Shop Floor Data Collection</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/solutions/scheduling/">- Scheduling</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/shipping/efi-smartlinc-shipping/overview/">- Shipping</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/business-consulting/">- Business Consulting</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/software-a-z-quick-finder/">- Software A-Z Quick Finder</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/efi-marketdirect-customer-engagement-platform/">- MarketDirect Customer Engagement Platform</a></li>
+                  </ul>
+              </li>
+                  </li>
+                  <li ><a href="#" style="font-size:14px !important; text-decoration: none; ">Support and Downloads</a>
+                    <ul class="dropdown">
+                      <li><a href="https://communities.efi.com/s/">- EFI Communities</a></li>
+                      <li><a href="https://www.efi.com/support-and-downloads/product-support/">- Product Support</a></li>
+                      <li><a href="https://www.efi.com/support-and-downloads/downloads/">- Downloads</a></li>
+                      <li><a href="https://www.efi.com/support-and-downloads/fiery-free-software-trials/">- Fiery Free Software Trials</a></li>
+                  </ul>
+              </li>
+            </li>
+                  <li ><a href="#" style="font-size:14px !important; text-decoration: none; ">Training & Services</a>
+                    <ul class="dropdown">
+                      <li><a href="https://www.efi.com/training-and-services/professional-and-contract-services/">- Professional & Contract Services</a></li>
+                      <li><a href="https://www.efi.com/training-and-services/training/">- Training</a></li>
+                      <li><a href="https://www.efi.com/training-and-services/additional-support-offerings/fiery-advantage-solutions-and-training-fast/">- Additional Support Offerings</a></li>
+                  </ul>
+              </li></li>
+                  <li ><a href="#" style="font-size:14px !important; text-decoration: none; ">Resources</a>
+                    <ul class="dropdown">
+                      <li><a href="https://www.efi.com/resources/documents/">- Documents</a></li>
+                      <li><a href="https://www.efi.com/resources/videos/">- Video Library</a></li>
+                      <li><a href="https://www.efi.com/resources/fiery-how-to-guides-and-docs/">- Fiery How-to-Guides & Docs</a></li>
+                      <li><a href="https://www.efi.com/resources/fiery-online-resources/">- Fiery Online Resources</a></li>
+                      <li><a href="https://www.efi.com/about-efi/events/webinars-calendar/">- Webinar Calendars</a></li>
+                    </ul>
+              </li></li>
+                  <li><a href="#" style="font-size:14px !important; text-decoration: none; ">About EFI</a>
+                    <ul class="dropdown">
+                      <li><a href="https://www.efi.com/about-efi/who-is-efi/">- Who is EFI</a></li>
+                      <li><a href="https://www.efi.com/about-efi/leadership/">- Leadership</a></li>
+                      <li><a href="http://ir.efi.com">- Investor Relations</a></li>
+                      <li><a href="https://www.efi.com/about-efi/newsroom/">- Newsroom</a></li>
+                      <li><a href="https://www.efi.com/about-efi/events/upcoming-events/">- Events</a></li>
+                      <li><a href="https://www.efi.com/about-efi/careers/">- Careers</a></li>
+                      <li><a href="https://www.efi.com/about-efi/contact-us/">- Contact Us</a></li>
+                      <li><a href="https://www.efi.com/about-efi/partners/">- Partners</a></li>
+                  </ul>
+              </li></li>
+                  
+              </ul>
+              </div>
+              <!-- Nav End --> 
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Welcome Area Start -->
+    <section class="welcome-area">
+        <div class="welcome-slides owl-carousel">
+            <!-- Single Welcome Slide -->
+            <div class="single-welcome-slide bg-img" style="background-image: url(img/bg-img/market-direct-hero.png);background-position: inherit;">
+                <!-- Welcome Content -->
+                <div class="welcome-content h-100">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12 col-md-9 col-lg-6">
+                                <div class="welcome-text">
+                                    <h3 data-animation="fadeInUp" data-delay="100ms" style="color:#ffffff">EFI MarketDirect Cross Media</h3>
+                                    <p data-animation="fadeInUp" data-delay="400ms" style="color:#ffffff">We added new ways to reach peak productivity</p>
+                                    <a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+    <!-- Welcome Area End -->
+
+    
+
+ 
+
+    <!-- Our Service Area Start -->
+    <section class="akame-service-area section-padding-80-0">
+        <div class="container">
+
+                <div class="row">
+                        <div class="col-12">
+                            <!-- Section Heading -->
+                            <div class="section-heading ">
+                                <h1 class="text-center">Introducing SmartCampaign</h1>
+                                </div>
+                        </div>
+                    </div>
+                <div class="row" style="margin-bottom: -20px;">
+
+                        <!-- Single Service Area -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="single-service-area mb-80 wow fadeInUp" data-wow-delay="200ms">
+                                <img src="img/core-img/s1.png" alt="">
+                                <h5>Fast</h5>
+                                <p>Ut enim ad minim veniam, quis trud exercitation...</p>
+                            </div>
+                        </div>
+        
+                        <!-- Single Service Area -->
+                        <div class="col-12 col-sm-6 col-lg-3" style="padding-bottom:0px;">
+                            <div class="single-service-area mb-80 wow fadeInUp" data-wow-delay="400ms">
+                                <img src="img/core-img/s3.png" alt="">
+                                <h5>Powerful</h5>
+                                <p>Consectetur adipisicing elit, sed doe eiusmod.</p>
+                            </div>
+                        </div>
+        
+                        <!-- Single Service Area -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="single-service-area mb-80 wow fadeInUp" data-wow-delay="600ms">
+                                <img src="img/core-img/s4.png" alt="">
+                                <h5>Responisive</h5>
+                                <p>Nemo enim ipsam voluptatem quia voluptas</p>
+                            </div>
+                        </div>
+        
+                        <!-- Single Service Area -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="single-service-area mb-80 wow fadeInUp" data-wow-delay="800ms">
+                                <img src="img/core-img/s2.png" alt="">
+                                <h5>Personalize</h5>
+                                <p>Ut enim ad minim veniam, quis trud exercitation...</p>
+                            </div>
+                        </div>
+        
+                    </div>
+            
+			
+			
+		<div class="row">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading ">
+                            <h4 class="text-center">Intuitive and Powerful Campaign Design</h4>
+                        <p>EFI MarketDirect Cross Media is a customer communication and marketing campaign solution. It’s designed to make engaging with your customers both existing and new, easy and hassle free. It achieves this by providing an intuitive yet powerful user experience where you can quickly create rich personalized communications across nearly any medium including; Email, Web, Print, Mobile and Social Media.</p>
+
+                            <p>Using MarketDirect, your team can connect your customer data to your communications and personalize the content and conversations. Personalized content can include Graphics, Images, Text, pURLs and QR Codes – all integrated enabling you to improve engagement and connect with your clients.</p>
+                    </div>
+                </div>
+            </div>	
+			
+	<div class="row">
+		<div class="col-md-12 col-center m-auto">
+			<h2>Testimonials</h2>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Carousel indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>   
+				<!-- Wrapper for carousel items -->
+				<div class="carousel-inner">
+					<div class="item carousel-item active">
+						<div class="img-box"><img src="img/1.jpg" alt=""></div>
+						<p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+						<p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+					</div>
+					<div class="item carousel-item">
+						<div class="img-box"><img src="img/2.jpg" alt=""></div>
+						<p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+						<p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
+					</div>
+					<div class="item carousel-item">
+						<div class="img-box"><img src="img/3.jpg" alt=""></div>
+						<p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
+						<p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+					</div>
+				</div>
+				<!-- Carousel controls -->
+				<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+
+			
+			
+			
+			
+
+            
+            
+        </div>
+    </section>
+    <!-- Our Service Area End -->
+
+    <!-- Why Choose Us Area Start -->
+    <section class="why-choose-us-area bg-gray section-padding-80-0" style="margin-bottom:50px">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+
+                    
+                    <div class="video-container"><iframe width="450" height="325" src="https://www.youtube.com/embed/8lqo4PrT0Ik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; " allowfullscreen></iframe></div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <!-- Section Heading -->
+                    <div class="section-heading">
+                        <h3>Product Capabilities</h3>
+                        <p>With EFI’s family of Wide Format, VUTEk and Jetrion inkjet printing systems, anything is possible and everything is within your reach. See how EFI inkjet solutions offer everything your company needs to succeed.</p>
+                    </div>
+                    <!-- Choose Us Content -->
+                    <div class="choose-us-content mt-30 mb-80">
+                        <ul>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> We Strive For LIVE Answer On Our Calls.</li>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> A Wide Spectrum Of Skills And Experience.</li>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Fast Response To Requests &amp; Critical Response Time Guaranteed.</li>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> We Help Solve Your Business Problems.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Us Area End -->
+
+    
+
+
+    <section >
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="demo">
+                        <div class="container">
+                            
+                
+                            <div class="row">
+                                <div class="col-md-12 col-sm-10 col-xs-8">
+                                    <div id="testimonial-slider" class="owl-carousel">
+                                        <div class="testimonial">
+                                            <div class="pic">
+                                                <img src="img/bg-img/ar-carton.png" alt=""/>
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <p class="description">
+                                                        Because the Packaging Suite is designed specifically for the packaging industry, it fits what we do out-of-the-box. But with the enhancements EFI has developed over the years, our system is a true hand-in-glove solution.
+                                                </p>
+                                                <h3 class="testimonial-title">Jonas Kretz
+                                                    <small class="post">Group IT manager, A&R Carton</small>
+                                                </h3> 
+                                                <div style="padding-top:15px; padding-left:35px;"><a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff; ">Read Case Study</a>
+                                            </div>
+                                                </div>
+                                        </div>
+                
+                                        <div class="testimonial">
+                                            <div class="pic">
+                                                <img src="img/bg-img/netpak.png" alt=""/>
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <p class="description">
+                                                        We are linking shop floor data collection with AC4D and automated scheduling with PrintFlow to add more value and productivity gains to our Radius solution. It makes Netpak more efficient, and uniquely positions us against our competitors. </p>
+                                                <h3 class="testimonial-title">
+                                                        Georges Berbari
+                                                    <small class="post">Chief Operating Officer, Netpak</small>
+                                                </h3>
+                                                <div style="padding-top:15px; padding-left:35px;"><a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff; ">Read Case Study</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="testimonial">
+                                            <div class="pic">
+                                                <img src="img/bg-img/firstan-logo-testimonial.png" alt=""/>
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <p class="description">
+                                                        “We have generated greater efficiencies through achieving tighter margins across the business.”</p>
+                                                <h3 class="testimonial-title">Andrew Hartwig
+                                                    <small class="post">Managing Director, Firststan Quality Packaging</small>
+                                                </h3>
+                                                <div style="padding-top:15px; padding-left:35px;"><a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff; ">Read Case Study</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    </div>
+				</div>
+		</div>
+            </section>
+                        
+
+	<!-- Service start -->
+
+	<section id="service" class="service parallax parallax1">
+
+		
+
+		<div class="container">
+
+			<div class="row " style="position: relative; z-index: 10;">
+
+                <h3  class="title-big" style="padding-bottom:25px; color:#ffffff; margin:0 auto;padding-left: 25px; padding-right: 25px; text-align: center;"  >The Evolution of Segment-Focused Productivity</h3>
+                <p style="color:#ffffff; text-align: center; padding-bottom: 35px; padding-left: 25px; padding-right: 25px;">EFI Productivity Suites address your most pressing automation and efficiency needs by moving the workflow emphasis away from individual software packages to a complete offering that uses best-in-class segment-based MIS/ERP systems, end-to-end workflows designed for your business needs, certified integrations and synchronized development. Simplify your operations, grow into new markets and maximize your investments through scalable, integrated Productivity Suites.</p>
+
+				
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<div class="col-lg-4 col-md-4 col-sm-12 wow fadeInDown" data-wow-delay=".5s" align="center" style="padding-bottom:25px">
+
+						
+
+							<div class="team-member-img">
+                                <img src="img/bg-img/12.jpg" alt="">
+                                
+                            </div>
+
+							<!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>-->
+                        
+							<div style="padding-top:25px;"><a href="#" class="akame-btn ">Download eBook</a></div>
+
+						
+
+					</div><!--/ End 1st service -->
+
+
+
+					<div class="col-lg-4 col-md-4 col-sm-12 wow fadeInDown" data-wow-delay=".8s" align="center" style="padding-bottom:25px" >
+
+						<div class="team-member-img">
+                            <img src="img/bg-img/10.jpg" alt="">
+                            
+                        </div>
+
+							<!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>-->
+                      
+                        <div style="padding-top:25px;"><a href="#" class="akame-btn ">View Infographic</a></div>
+
+						
+
+					</div><!--/ End 2nd service -->
+
+
+
+					<div class="col-lg-4 col-md-4 col-sm-12 wow fadeInDown" data-wow-delay="1.1s" align="center" style="padding-bottom:25px">
+
+						<div class="team-member-img">
+                            <img src="img/bg-img/10a.jpg" alt="">
+                            
+                        </div>
+
+							<!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>-->
+                        
+                        <div style="padding-top:25px;"><a href="#" class="akame-btn ">Download Whitepaper</a></div>
+
+						
+
+					</div><!--/ End 3rd service -->
+
+
+
+					
+
+				</div>
+
+				
+
+			</div><!-- Content row end -->
+
+		</div><!--/ Container end -->
+
+	</section><!--/ Service box end -->
+
+
+<!-- Call To Action Area Start -->
+<section class="akame-cta-area bg-gray section-padding-80">
+        <div class="container">
+            <div class="row">
+                    <div class="col-12 col-sm-10 col-xl-5">
+                            <div class="cta-content">
+                                
+                                    <div class="video-container"><iframe width="450" height="325" src="https://www.youtube.com/embed/8lqo4PrT0Ik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; " allowfullscreen></iframe></div>
+                                </div>
+                               
+                            </div>
+                <div class="col-12 col-sm-10 col-xl-7">
+                    <div class="cta-content">
+                        <h3>Not Finding What You're Looking For?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut la.</p>
+                        <div class="akame-btn-group mt-30">
+                                <a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff; ">Download eBook</a>
+                                <a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff; ">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                
+                    </div>
+            </div>
+        
+
+        <!-- CTA Thumbnail -->
+        <div class="cta-thumbnail bg-img" style="background-image: url(img/bg-img/cta.png);"></div>
+    </section>
+    <!-- Call To Action Area End -->
+
+      <!-- Footer Area Start -->
+   <footer class="footer wow fadeInDown" style="background-color:#ccc !important; ">
+    <div class="container" style=" background-color:#ccc; padding-top:35px">
+  <div class="row">
+        <div class="col-lg-6 col-sm-6 footer-links text-left footer-text" style="text-align: left">
+        
+          <a href="https://www.efi.com/legal/privacy/">Privacy Policy</a>  &nbsp;|&nbsp;  <a href="https://www.efi.com/legal/terms-of-use/">Terms of Use</a>  &nbsp;|&nbsp;  <a href="https://www.efi.com/about-efi/contact-us/">Contact Us</a>
+        <p class="footer-text"><a href="https://www.efi.com/legal/copyright/">©2020 Electronics For Imaging, Inc. All Rights Reserved.</a></p> 
+      </div>
+      <div class="col-lg-6 col-sm-6" style="text-align:right;margin-top: 15px;">
+          
+       <a href="https://www.facebook.com/EFIPrint/" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; display: inline-block; margin: 0 6px 0 6px;"><img alt="Facebook Icon" src="https://www.efi.com/library/efi/images/shared/icons/social_media/facebook_icon.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; line-height: 100%; width: 20px; height: auto; display: inline-block; border-width: 0; border-style: none;"></a>
+<a href="https://www.linkedin.com/company/efiprint" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; display: inline-block; margin: 0 6px 0 6px;"><img alt="LinkedIn Icon" src="https://www.efi.com/library/efi/images/shared/icons/social_media/linkedin_icon.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; line-height: 100%; width: 20px; height: auto; display: inline-block; border-width: 0; border-style: none;"></a>
+<a href="https://twitter.com/EFIPrint" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; display: inline-block; margin: 0 6px 0 6px;"><img alt="Twitter Icon" src="https://www.efi.com/library/efi/images/shared/icons/social_media/twitter_icon.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; line-height: 100%; width: 20px; height: auto; display: inline-block; border-width: 0; border-style: none;"></a>
+<a href="https://www.youtube.com/user/EFIDigitalPrintTech" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; display: inline-block; margin: 0 6px 0 6px;"><img alt="Youtube Icon" src="https://go.efi.com/rs/559-INV-406/images/EFI_Social_YouTube.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; line-height: 100%; width: 20px; height: auto; display: inline-block; border-width: 0; border-style: none;"></a>
+<a href="https://www.instagram.com/efiprint/" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; display: inline-block; margin: 0 6px 0 6px;"><img alt="Instagram Icon" src="https://go.efi.com/rs/559-INV-406/images/EFI_Social_Instagram.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; line-height: 100%; width: 20px; height: auto; display: inline-block; border-width: 0; border-style: none;"></a>
+        
+      </div>
+  </div>
+</div>
+</footer>
+<!-- End Footer Bottom -->
+
+   
+<script type="text/javascript">
+    if (typeof MktoForms2 !== 'undefined') {
+        //add a callback to the first ready form on the page
+        MktoForms2.whenReady(function (form) {
+            if (Cookies.get("_mkto_form_submit") != undefined) {
+                //add the tracking field to be submitted
+                form.addHiddenFields({
+                    "_mkt_trk": ""
+                });
+                form.addHiddenFields({
+                    "munchkinId": ""
+                });
+  
+                //clear the value during the onSubmit event to prevent tracking association
+                form.onSubmit(function (form) {
+                    form.vals({
+                        "_mkt_trk": ""
+                    });
+                    form.vals({
+                        "munchkinId": ""
+                    });
+          if (Cookies.get("go_efi") != 'y' ||
+            (Cookies.get("go_efi") == 'y' && Cookies.get("go_efi_consent") == "allow")) {
+            Cookies.set("_mkto_form_submit", "yes");
+                    }
+                })
+            } else {
+                //clear the value during the onSubmit event to prevent tracking association
+        form.onSubmit(function (form) {
+          if (Cookies.get("go_efi") != 'y' ||
+            (Cookies.get("go_efi") == 'y' && Cookies.get("go_efi_consent") == "allow")) {
+            Cookies.set("_mkto_form_submit", "yes");
+                  }
+                })
+            }
+        })
+    }
+  </script>
+  
+  <!-- All JS Files --> 
+  <!-- jQuery --> 
+  <script src="js/jquery.min.js"></script> 
+  <!-- Popper --> 
+  <script src="js/popper.min.js"></script> 
+  <!-- Bootstrap --> 
+  <script src="js/bootstrap.min.js"></script> 
+  <!-- All Plugins --> 
+  <script src="js/akame.bundle.js"></script> 
+  <!-- Active --> 
+  <script src="js/default-assets/active.js"></script>
+  
+  <script src="//go.efi.com/rs/559-INV-406/images/cookie-consent-popup.js"></script>
+  <style>  #PureChatWidget.purechat.purechat-bottom-right {
+    bottom: 70px !important;
+  }
+  </style>
+  <script type="text/javascript" src="https://go.efi.com/js/stripmkttok.js"></script>
+
+
+
+
+</body>
+
+</html>

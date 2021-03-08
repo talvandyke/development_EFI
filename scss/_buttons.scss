@@ -1,0 +1,50 @@
+    /* :: 6.0 Buttons CSS */
+
+.btn {
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.akame-btn {
+    font-family: $font-playfair-display;
+    position: relative;
+    z-index: 1;
+    min-width: 150px;
+    height: 42px;
+    line-height: 40px;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    display: inline-block !important;
+    padding: 0 35px !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    background-color: transparent;
+    color: $heading !important;
+    border: 1px solid #ffffff !important;
+    border-radius: 60px !important;
+    @include transition-duration(500ms) !important;
+
+    &:focus,
+    &:hover {
+        border-color: $hover;
+        font-weight: 400;
+        font-size: 14px;
+        background-color: $hover;
+        color: $white;
+        @include box-shadow($box-shadow);
+    }
+
+    &.active {
+        border-color: $hover;
+        background-color: $hover;
+        color: $white;
+
+        &:focus,
+        &:hover {
+            border-color: $heading;
+            background-color: $heading;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,137 @@
+.testimonial{
+    border-left: 3px solid #009bd2;
+    padding: 75px 0 75px 275px;
+    position: relative
+}
+.demo
+{
+	padding: 100px 0;
+}
+.heading-title
+{
+	margin-bottom: 100px;
+}
+.testimonial:before,
+.testimonial:after{
+    content: "";
+    width: 320px;
+    height: 55px;
+    border-right: 3px solid #009bd2;
+    position: absolute;
+    left: 0;
+}
+
+.testimonial:before{
+    border-top: 3px solid #009bd2;
+    top: 0;
+}
+
+.testimonial:after {
+    border-bottom: 3px solid #009bd2;
+    bottom: 0;
+}
+
+.testimonial .pic{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 35px;
+    left: 20px;
+}
+
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+}
+
+.testimonial .description{
+    font-size: 14px;
+    color: #7a7e82;
+    line-height: 27px;
+    position: relative;
+    padding-left:35px;
+}
+
+.testimonial .description:before{
+    content: "\f10d";
+    font-family: fontawesome;
+    position: absolute;
+    top: -70px;
+    left: 0;
+    font-size: 20px;
+    color: #7a7e82;
+}
+
+.testimonial .testimonial-title{
+    font-size: 22px;
+    font-weight:800;
+    color: #22272c;
+    text-transform: capitalize;
+    padding-left:35px;
+}
+
+.testimonial .post{
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    color :#003283;
+    margin-top: 10px;
+   
+}
+
+.owl-theme .owl-controls{
+    text-align: right;
+    margin-top: 30px;
+}
+
+.owl-theme .owl-controls .owl-buttons div{
+    background: #009bd2;
+    border-radius: 0;
+    opacity: 1;
+    padding: 5px 10px;
+}
+
+.owl-prev:before,
+.owl-next:before{
+    content: "\f053";
+    font-family: 'FontAwesome';
+    color: #fff;
+}
+
+.owl-next:before{
+    content: "\f054";
+}
+
+@media only screen and (max-width: 990px){
+    .testimonial{
+        padding: 80px 0 80px 265px;
+    }
+}
+
+
+
+@media only screen and (max-width: 767px){
+    .testimonial{
+        padding: 0;
+        border: none;
+    }
+    .testimonial:before,
+    .testimonial:after{
+        border: none;
+    }
+    .testimonial .pic{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .testimonial .description{
+        margin-top: 15px;
+    }
+    .testimonial .description:before{
+        content: "";
+    }
+}
+
+
+
+

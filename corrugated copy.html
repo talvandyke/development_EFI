@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>EFI - Electronics for imaging</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="###">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600&display=swap" rel="stylesheet">
+<script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
+    
+    
+<!-- Munchkin: begin --> 
+<script type="text/javascript">
+    if (window.location.host.toLowerCase() === "go.efi.com" || window.location.host.toLowerCase() === "www.go.efi.com") {
+        if (Cookies.get("go_efi") != 'y' ||
+            (Cookies.get("go_efi") == 'y' && Cookies.get("go_efi_consent") == "allow")) {
+            (function () {
+                var didInit = false;
+                function initMunchkin() {
+                    if (didInit === false) {
+                        didInit = true;
+                        Munchkin.init('559-INV-406', { "domainLevel": 3 });
+                    }
+                }
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = 'https://munchkin.marketo.net/munchkin.js';
+                s.onreadystatechange = function () {
+                    if (this.readyState == 'complete' || this.readyState == 'loaded') {
+                        initMunchkin();
+                    }
+                };
+                s.onload = initMunchkin;
+                document.getElementsByTagName('head')[0].appendChild(s);
+            })();
+        }
+    }
+  </script>
+  <script type="text/javascript" async="" src="https://munchkin.marketo.net/munchkin.js"></script>
+  <!-- Munchkin: end --> 
+    
+    
+    <style type="text/css">
+        .parallax {
+            color: #fff;
+            padding: 80px 0;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover !important;
+            transform: translateZ(0);
+            -moz-transform: translatez(0);
+            -ms-transform: translatez(0);
+            -o-transform: translatez(0);
+            -webkit-transform: translateZ(0);
+            -webkit-transform: translate3d(0px, 0px, 0px);
+        }
+        /* Services
+        ================================================== */
+        
+        .service-heading {
+            padding-bottom: 30px;
+            text-align: center;
+        }
+        .service-content {
+            color: #333;
+            background: #ffffff;
+            background: rgba(255,255,255,0.85);
+            padding: 30px;
+            -webkit-transition: 350ms;
+            -moz-transition: 350ms;
+            -o-transition: 350ms;
+            transition: 350ms;
+            border-radius: 2px;
+        }
+        .service-content:hover {
+            background: #fff;
+        }
+        .service-content h3 {
+            color: #333;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .service-icon {
+            height: 56px;
+            width: 100px;
+            margin-bottom: 30px;
+        }
+        .service-icon i {
+            font-size: 52px;
+        }
+        .service-content a.readmore {
+            margin-top: 10px;
+        }
+        /* Service Image */
+        
+        .service-image {
+            background: #fff;
+        }
+        .service-image .service-content {
+            padding: 0;
+        }
+        .service-image .service-content a.readmore {
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 10px;
+        }
+        .parallax1 {
+            background: url(../img/parallax1.jpg) no-repeat;
+        }
+        .parallax-overlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: url(../img/overaly.png);
+        }
+        .akame-btn:hover {
+            background-color: #003283;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe, .video-container object, .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .lightbox {
+            background-color: fade(black, 80%);
+            overflow: scroll;
+            position: fixed;
+            display: none;
+            z-index: 1;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 0;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+           line-height:38px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+            position: relative;
+            margin: 30px 0 60px;
+        }
+        h1::after {
+            content: "";
+            width: 100px;
+            position: absolute;
+            margin: 0 auto;
+            height: 3px;
+            background: #009bd2;
+            left: 0;
+            right: 0;
+            bottom: -10px;
+        }
+        
+        h2 {
+            color: #333;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            position: relative;
+            margin: 30px 0 60px;
+        }
+        h2::after {
+            content: "";
+            width: 100px;
+            position: absolute;
+            margin: 0 auto;
+            height: 3px;
+            background: #009bd2;
+            left: 0;
+            right: 0;
+            bottom: -10px;
+        }
+        .col-center {
+            margin: 0 auto;
+            float: none !important;
+        }
+        .carousel {
+            margin: 50px auto;
+            padding: 0 70px;
+        }
+        .carousel .item {
+            color: #999;
+            font-size: 14px;
+            text-align: center;
+            overflow: hidden;
+            min-height: 290px;
+        }
+        .carousel .item .img-box {
+            width: 300px;
+            height: 118px;
+            margin: 0 auto;
+            padding: 5px;
+            
+        }
+        .carousel .img-box img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 50%;
+        }
+        .carousel .testimonial {
+            padding: 30px 0 10px;
+        }
+        .carousel .overview {
+            font-style: italic;
+        }
+        .carousel .overview b {
+            text-transform: uppercase;
+            color: #009bd2;
+        }
+        .carousel .carousel-control {
+            width: 40px;
+            height: 40px;
+            margin-top: -20px;
+            top: 50%;
+            background: none;
+        }
+        .carousel-control i {
+            font-size: 68px;
+            line-height: 42px;
+            position: absolute;
+            display: inline-block;
+            color: rgba(0, 0, 0, 0.8);
+            text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+        }
+        .carousel .carousel-indicators {
+            bottom: -40px;
+        }
+        .carousel-indicators li, .carousel-indicators li.active {
+            width: 10px;
+            height: 10px;
+            margin: 1px 3px;
+            border-radius: 50%;
+        }
+        .carousel-indicators li {
+           
+            border-color: transparent;
+            box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+        }
+        .carousel-indicators li.active {
+            background: #555;
+            box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+        }
+        .footer-text{
+          font-size:12px;
+        }
+        .row:before, .row:after {display: none !important;}
+
+
+    
+</style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        
+        <!-- Top Header Area End -->
+
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="akameNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="index.html"><img src="img/efi_logo_100x65.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+            <div class="classynav">
+                <ul id="nav">
+                  <li ><a href="#" style="font-size:14px !important; text-decoration: none; ">Industries</a>
+                    <ul class="dropdown">
+                      <li><a href="https://www.efi.com/industries/commercial-printing/">- Commercial Printing</a></li>
+                      <li><a href="https://www.efi.com/industries/digital-production-franchise-quick-print/">- Franchise/Quick Print</a></li>
+                      <li><a href="https://www.efi.com/industries/labels/">- Labels</a></li>
+                      <li><a href="https://www.efi.com/industries/flexible-packaging-extrusion/">- Flexible Packaging/ Extrusion</a></li>
+                      <li><a href="https://www.efi.com/industries/folding-carton/">- Folding Carton</a></li>
+                      <li><a href="https://www.efi.com/industries/corrugated/">- Corrugated</a></li>
+                      <li><a href="https://www.efi.com/industries/screen-printing/">- Screen Printing</a></li>
+                      <li><a href="https://www.efi.com/industries/sign-and-display/">- Sign and Display</a></li>
+                      <li><a href="https://www.efi.com/industries/general-business-printing/">- General Business Printing</a></li>
+                      <li><a href="https://www.efi.com/industries/government-university/">- Government/University</a></li>
+                      <li><a href="https://www.efi.com/industries/corporate-reprographics-in-plant/">- Corporate Reprographics/In Plant</a></li>
+                      <li><a href="https://www.efi.com/industries/creative-agency-color-professional/">- Creative Agency</a></li>
+                      <li><a href="https://www.efi.com/industries/photo-and-fine-art/">- Photo and Fine Art</a></li>
+                      <li><a href="https://www.efi.com/industries/publications-book-printing/">- Publication/Book Printing</a></li>
+                      <li><a href="https://www.efi.com/industries/ceramic-tile-manufacturing/">- Ceramic Tile Manufacturing</a></li>
+                      <li><a href="https://www.efi.com/industries/building-materials/">- Build Materials</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/fulfillment/">- Fulfillment</a></li>
+                      <li><a href="https://www.efi.com/industries/textiles/">- Textiles</a></li>
+                  </ul>
+              </li>
+            </li>
+                  <li ><a href="#" style="font-size:14px !important; text-decoration: none; ">Products</a>
+                    <ul class="dropdown">
+                      <li><a href="https://www.efi.com/products/productivity-software/productivity-suite/">- Productivity Suite</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/optitex-textile-3d-design/">- Optitex Textile 3D Design</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/solutions/management-mis-erp/">- Management (MIS/ERP)</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/efi-marketdirect-customer-engagement-platform/efi-marketdirect-storefront/overview/">- eCommerce/Web-to-Print</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/efi-marketdirect-customer-engagement-platform/efi-marketdirect-cross-media/overview/">- Marketing</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/fulfillment/efi-printstream-fulfillment/overview/">- Fulfillment</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/business-intelligence/efi-business-intelligence/overview/">- Business Intelligence</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/shop-floor-data-collection/efi-auto-count/overview/">- Shop Floor Data Collection</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/solutions/scheduling/">- Scheduling</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/shipping/efi-smartlinc-shipping/overview/">- Shipping</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/business-consulting/">- Business Consulting</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/software-a-z-quick-finder/">- Software A-Z Quick Finder</a></li>
+                      <li><a href="https://www.efi.com/products/productivity-software/efi-marketdirect-customer-engagement-platform/">- MarketDirect Customer Engagement Platform</a></li>
+                  </ul>
+              </li>
+                  </li>
+                  <li ><a href="#" style="font-size:14px !important; text-decoration: none; ">Support and Downloads</a>
+                    <ul class="dropdown">
+                      <li><a href="https://communities.efi.com/s/">- EFI Communities</a></li>
+                      <li><a href="https://www.efi.com/support-and-downloads/product-support/">- Product Support</a></li>
+                      <li><a href="https://www.efi.com/support-and-downloads/downloads/">- Downloads</a></li>
+                      <li><a href="https://www.efi.com/support-and-downloads/fiery-free-software-trials/">- Fiery Free Software Trials</a></li>
+                  </ul>
+              </li>
+            </li>
+                  <li ><a href="#" style="font-size:14px !important; text-decoration: none; ">Training & Services</a>
+                    <ul class="dropdown">
+                      <li><a href="https://www.efi.com/training-and-services/professional-and-contract-services/">- Professional & Contract Services</a></li>
+                      <li><a href="https://www.efi.com/training-and-services/training/">- Training</a></li>
+                      <li><a href="https://www.efi.com/training-and-services/additional-support-offerings/fiery-advantage-solutions-and-training-fast/">- Additional Support Offerings</a></li>
+                  </ul>
+              </li></li>
+                  <li ><a href="#" style="font-size:14px !important; text-decoration: none; ">Resources</a>
+                    <ul class="dropdown">
+                      <li><a href="https://www.efi.com/resources/documents/">- Documents</a></li>
+                      <li><a href="https://www.efi.com/resources/videos/">- Video Library</a></li>
+                      <li><a href="https://www.efi.com/resources/fiery-how-to-guides-and-docs/">- Fiery How-to-Guides & Docs</a></li>
+                      <li><a href="https://www.efi.com/resources/fiery-online-resources/">- Fiery Online Resources</a></li>
+                      <li><a href="https://www.efi.com/about-efi/events/webinars-calendar/">- Webinar Calendars</a></li>
+                    </ul>
+              </li></li>
+                  <li><a href="#" style="font-size:14px !important; text-decoration: none; ">About EFI</a>
+                    <ul class="dropdown">
+                      <li><a href="https://www.efi.com/about-efi/who-is-efi/">- Who is EFI</a></li>
+                      <li><a href="https://www.efi.com/about-efi/leadership/">- Leadership</a></li>
+                      <li><a href="http://ir.efi.com">- Investor Relations</a></li>
+                      <li><a href="https://www.efi.com/about-efi/newsroom/">- Newsroom</a></li>
+                      <li><a href="https://www.efi.com/about-efi/events/upcoming-events/">- Events</a></li>
+                      <li><a href="https://www.efi.com/about-efi/careers/">- Careers</a></li>
+                      <li><a href="https://www.efi.com/about-efi/contact-us/">- Contact Us</a></li>
+                      <li><a href="https://www.efi.com/about-efi/partners/">- Partners</a></li>
+                  </ul>
+              </li></li>
+                  
+              </ul>
+              </div>
+              <!-- Nav End --> 
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Welcome Area Start -->
+    <section class="welcome-area">
+        <div class="welcome-slides owl-carousel">
+            <!-- Single Welcome Slide -->
+            <div class="single-welcome-slide bg-img" style="background-image: url(img/bg-img/market-direct-hero.png);background-position: inherit;">
+                <!-- Welcome Content -->
+                <div class="welcome-content h-100">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12 col-md-9 col-lg-6">
+                                <div class="welcome-text">
+                                    <h3 data-animation="fadeInUp" data-delay="100ms" style="color:#ffffff;font-size:36px;font-family: 'Raleway', sans-serif;">EFI Packaging Suite</h3>
+                                    <p data-animation="fadeInUp" data-delay="400ms" style="color:#ffffff">We added new ways to reach peak productivity</p>
+                                    <a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff; ">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+    <!-- Welcome Area End -->
+
+    
+
+ 
+
+    <!-- Our Service Area Start -->
+    <section class="akame-service-area section-padding-80-0">
+        <div class="container">
+
+                <div class="row">
+                        <div class="col-12">
+                            <!-- Section Heading -->
+                            <div class="section-heading ">
+                                <h2 class="text-center">This will be our H1</h2>
+                                </div>
+                        </div>
+                    </div>
+                
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading ">
+                            <h4 style="color:#003283">Intuitive and Powerful Campaign Design</h4>
+                        <p>To stay ahead of the game requires business solutions that simplify your processes and enable sustained and profitable growth. At the same time, every department in your company must work faster, handle more work and manage more change. This requires a shift in strategy from optimising each part of your business to managing your entire end-to-end workflow. Transform your business and enable your digital future with our industry leading Packaging productivity solutions.</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+        </div>
+    </section>
+    <!-- Our Service Area End -->
+<!-- Border -->
+<div class="container" >
+    <div class="border-top mt-3"></div>
+  </div>
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-12 col-center m-auto">
+        <h2>Testimonials</h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+          <!-- Carousel indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <!-- Wrapper for carousel items -->
+          <div class="carousel-inner">
+            <div class="item carousel-item active">
+              <div class="img-box"><img src="img/logos/TSG-Sourcing-Group-logo.png" alt=""></div>
+              <p class="testimonial">MarketDirect StoreFront with Smart Canvas is a complete customer management system that gives us unlimited capability to expand.
+                </p>
+              <p class="overview"><b>Billy Caan</b>, Founder/CEO, The Sourcing Group</p>
+            </div>
+            <div class="item carousel-item">
+              <div class="img-box"><img src="img/logos/NUTSHELL_fullCurve_SOLID_RGB_PORT_WO-logo.png" alt=""></div>
+              <p class="testimonial">MarketDirect has won us significant new business that’s enabling us to grow. Cross media marketing is still very new and there are very few agencies in the UK offering this service. </p>
+              </p>
+              <p class="overview"><b>Lucy Swanston</b>, Managing Director, Nutshell Creative</p>
+            </div>
+            <div class="item carousel-item">
+              <div class="img-box"><img src="img/logos/benson-logo.png" alt=""></div>
+              <p class="testimonial">We’re on track to grow by 30% year over year the next three years, and with our EFI integrated workfl ow, we can do that while adding little to no additional staff.</p>
+              </p>
+            </p>
+              <p class="overview"><b>Brian Benson</b>, Founder and CEO, Benson Integrated Marketing Solutions</p>
+            </div>
+          </div>
+          <!-- Carousel controls --> 
+          <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev"> <i class="fa fa-angle-left"></i> </a> <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next"> <i class="fa fa-angle-right"></i> </a> </div>
+      </div>
+    </div>
+  </div>
+    
+    <!-- Why Choose Us Area End -->
+<!-- Border -->
+<div class="container">
+        <div class="border-top mt-3" style="margin-bottom:75px; margin-top:25px;"></div>
+    </div>
+
+    <!-- Our Expert Area Start -->
+    <section class="akame-our-expert-area ">
+        <div class="container">
+          <div class="row justify-content-end">
+            <div class="col-lg-12 col-12 "> 
+              <!-- Section Heading -->
+              <div class="section-heading">
+                <h2 style="margin-bottom:50px">Corrugated Offerings</h2>
+                <p style="text-align: center;">The EFI MarketDirect Customer Engagement Platform is designed to enable your business to sell, market, procure and fulfill online. The first of its kind – it combines EFI’s legendary eCommerce, Multi-Channel marketing and Fulfillment tools in one powerful platform.</p>
+                        </div>
+              <!-- Side Thumbnail --> 
+              <!--<div class="side-thumbnail" style="background-image: url(img/bg-img/446576887.jpg);"></div>--> 
+              
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row"> 
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member mb-80 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="team-member-img">
+                            <img src="img/bg-img/10-150.jpg" alt="">
+                            <!-- Social Info -->
+                            <div class="team-social-info d-flex align-items-center justify-content-center">
+                                
+                            </div>
+                        </div>
+                        <div class="team-member-info" style="padding-bottom:45px;">
+                            <h4>eCRM</h4>
+                            <p>The EFI eCRM capabilities extend the impact potential of your EFI management solution 
+                                to your sales team, making them more productive and efficient. Our suite 
+                                solutions enable rapid quoting and estimating helping you win more business by automating 
+                                key administrative tasks.
+
+ 
+                                </p>
+                                <p style="margin-top:7px"><a href="###"><strong>Learn More &RightArrow;</strong></a></p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member mb-80 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="team-member-img">
+                            <img src="img/bg-img/10a-150.jpg" alt="">
+                            <!-- Social Info -->
+                            <div class="team-social-info d-flex align-items-center justify-content-center">
+                                
+                            </div>
+                        </div>
+                        <div class="team-member-info" style="padding-bottom:45px;">
+                            <h4>ERP/MIS System</h4>
+                            <p>EFI Radius is a future-ready MIS/ERP solution that is purpose-built  for the folding carton, label, and flexible packaging industries. A complete end-to-end business management solution, Radius integrates to a wide range of pre-press and digital print workflow providers.
+
+ 
+                                    </p>
+                                    <p style="margin-top:7px"><a href="###"><strong>Learn More &RightArrow;</strong></a></p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member mb-80 wow fadeInUp" data-wow-delay="600ms">
+                        <div class="team-member-img">
+                            <img src="img/bg-img/12-150.jpg" alt="">
+                            <!-- Social Info -->
+                            <div class="team-social-info d-flex align-items-center justify-content-center">
+                                
+                            </div>
+                        </div>
+                        <div class="team-member-info">
+                            <h4>Scheduling</h4>
+                            <p>Intelligently optimize the sequencing of jobs by evaluating the constraints of the production operation with PrintFlow. PrintFlow is a rules-based scheduling solution that allows you to automatically update the schedule to adjust for changes ensuring your production machinery is fully utilised.
+</p>
+                                    <p style="margin-top:7px"><a href="###"><strong>Learn More &RightArrow;</strong></a></p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member mb-80 wow fadeInUp" data-wow-delay="800ms">
+                        <div class="team-member-img">
+                            <img src="img/bg-img/10e-150.jpg" alt="">
+                            <!-- Social Info -->
+                            <div class="team-social-info d-flex align-items-center justify-content-center">
+                                
+                            </div>
+                        </div>
+                        <div class="team-member-info">
+                            <h4>Transport Management</h4>
+                            <p>Optimize your trailer and reduce carbon footprint with EFI’s space saving trailer planning solution, SmartLinc. Available as an integrated module to EFI Radius, award-winning
+                                    SmartLinc is designed to streamline and automate shipping processes while optimizing 3rd party shipping. 
+                                    </p>
+                                    <p style="margin-top:7px"><a href="###"><strong>Learn More &RightArrow;</strong></a></p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member mb-80 wow fadeInUp" data-wow-delay="800ms">
+                        <div class="team-member-img">
+                            <img src="img/bg-img/10-150.jpg" alt="">
+                            <!-- Social Info -->
+                            <div class="team-social-info d-flex align-items-center justify-content-center">
+                                
+                            </div>
+                        </div>
+                        <div class="team-member-info">
+                            <h4>Estimating</h4>
+                            <p>EFI’s iQuote is a highly visual, web-based, JDF-compliant smart estimating software solution that supports all available and emerging technologies in the packaging industry.​
+                                    iQuote automates the process of picking the best path for a job through your plant by determining the most cost effective production route. 
+                                    </p>
+                                    <p style="margin-top:7px"><a href="###"><strong>Learn More &RightArrow;</strong></a></p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member mb-80 wow fadeInUp" data-wow-delay="800ms">
+                        <div class="team-member-img">
+                            <img src="img/bg-img/10a-150.jpg" alt="">
+                            <!-- Social Info -->
+                            <div class="team-social-info d-flex align-items-center justify-content-center">
+                               
+                            </div>
+                        </div>
+                        <div class="team-member-info" style="padding-bottom:67px;">
+                            <h4>eCommerce</h4>
+                            <p>EFI MarketDirect PackCentral is an online customer ordering portal designed specifically for the requirements of packaging producers. Build and visualise products in powerful 3D tools and connect to EFI’s leading packaging MIS tools to provide seamless order to production automation.
+</p>
+<p style="margin-top:7px"><a href="###"><strong>Learn More &RightArrow;</strong></a></p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member mb-80 wow fadeInUp" data-wow-delay="800ms">
+                        <div class="team-member-img">
+                            <img src="img/bg-img/10e-150.jpg" alt="">
+                            <!-- Social Info -->
+                            <div class="team-social-info d-flex align-items-center justify-content-center">
+                                
+                            </div>
+                        </div>
+                        <div class="team-member-info" style="padding-bottom:42px;">
+                            <h4>Data Collection</h4>
+                            <p>EFI Auto-Count<sup>®</sup> is an award-winning patented shop floor production intelligence​ platform that allows you to automatically collect accurate, up-to-the minute​ production data including counts, press status, speed and other critical information​ directly from your equipment in real-time. 
+
+ 
+                                    </p>
+                                    <p style="margin-top:7px"><a href="###"><strong>Learn More &RightArrow;</strong></a></p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member mb-80 wow fadeInUp" data-wow-delay="800ms">
+                        <div class="team-member-img">
+                            <img src="img/bg-img/12-150.jpg" alt="">
+                            <!-- Social Info -->
+                            <div class="team-social-info d-flex align-items-center justify-content-center">
+                                
+                            </div>
+                        </div>
+                        <div class="team-member-info">
+                            <h4>Business Intelligence</h4>
+                            <p>Through an easy-to-use interface, decision-makers gain deep visibility into their business operations with EFI Business Intelligence software. Easily identify trends as they begin to appear, accurately forecast effects of changing variables, and implement proactive measures to maximise profit and efficiency.
+</p>
+<p style="margin-top:7px"><a href="###"><strong>Learn More &RightArrow;</strong></a></p>
+                            
+                        </div>
+                    </div>
+                </div>
+<!-- Single Team Member -->
+<div class="col-12 col-sm-6 col-lg-3">
+        <div class="single-team-member mb-80 wow fadeInUp" data-wow-delay="800ms">
+            <div class="team-member-img">
+                <img src="img/bg-img/10a-150.jpg" alt="">
+                <!-- Social Info -->
+                <div class="team-social-info d-flex align-items-center justify-content-center">
+                   
+                </div>
+            </div>
+            <div class="team-member-info" style="padding-bottom:42px;">
+                <h4>Layout & Imposition</h4>
+                <p>EFI Metrix<sup>®</sup> allows you to dramatically reduce planning and prepress labour cost and shorten job throughput. Metrix enables you to optimise your print tooling and reduce the number of colour changes.
+
+                    </p>
+                    <p style="margin-top:7px"><a href="###"><strong>Learn More &RightArrow;</strong></a></p>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Single Team Member -->
+    <div class="col-12 col-sm-6 col-lg-3">
+        <div class="single-team-member mb-80 wow fadeInUp" data-wow-delay="800ms">
+            <div class="team-member-img">
+                <img src="img/bg-img/10e-150.jpg" alt="">
+                <!-- Social Info -->
+                <div class="team-social-info d-flex align-items-center justify-content-center">
+                    
+                </div>
+            </div>
+            <div class="team-member-info" style="padding-bottom:42px;">
+                <h4>Pre-Press Integration</h4>
+                <p>EFI has successfully integrated with many industry leading 3rd party applications to compliment and enrich the pre-press workflow making it  a true ‘end-to-end’ touchless solution.
+</p>
+                        <p style="margin-top:7px"><a href="###">Learn More &RightArrow;</a></p>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Single Team Member -->
+    <div class="col-12 col-sm-6 col-lg-3">
+        <div class="single-team-member mb-80 wow fadeInUp" data-wow-delay="800ms">
+            <div class="team-member-img">
+                <img src="img/bg-img/12-150.jpg" alt="">
+                <!-- Social Info -->
+                <div class="team-social-info d-flex align-items-center justify-content-center">
+                    
+                </div>
+            </div>
+            <div class="team-member-info">
+                <h4>Digital Printing</h4>
+                <p>Enable digital transformation with EFI's fully integrated JDF workflow. Our end-to-end solution connects to EFI Fiery and other leading 3rd party Digital Front Ends giving our customers a customisable ‘lights out’ solution.
+</p>
+                        <p style="margin-top:7px"><a href="###">Learn More &RightArrow;</a></p>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+<!-- Border -->
+<div class="container">
+    <div class="border-top mt-3" style="margin-bottom:75px; margin-top:25px;"></div>
+</div>
+
+    <!-- Portfolio Area Start -->
+    <section class="akame-portfolio section-padding-0-80 clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="portfolio-menu text-center mb-50">
+                        <button class="btn active" data-filter="*">All Solutions</button>
+                        <button class="btn" data-filter=".efficiency">Business Efficiency</button>
+                        <button class="btn" data-filter=".sustainable">Sustainable Manufacturing</button>
+                        <button class="btn" data-filter=".quality">Quality & Process Control</button><br>
+                        <button class="btn" data-filter=".digital">Digital Production</button>
+                        <button class="btn" data-filter=".consulting">Business Consulting</button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="row akame-portfolio-area">
+                
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item efficiency mb-30 wow fadeInUp" data-wow-delay="500ms">
+                    <div class="akame-portfolio-single-item">
+                        <img src="img/bg-img/10.jpg" alt="">
+
+                        <!-- Overlay Content -->
+                        <div class="overlay-content d-flex align-items-center justify-content-center">
+                            <div class="overlay-text text-center">
+                                <h4>Corrugated Business System (CBS)</h4>
+                                <p>Dynamically builds fast, accurate business and product specifications for the entire manufacturing and shipping process.</p>
+                                <div style="padding-top: 15px;"><a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff;">More Details</a></div>
+                            </div>
+                        </div>
+
+                        <!-- Thumbnail Zoom -->
+                        <a href="img/bg-img/10.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item efficiency mb-30 wow fadeInUp" data-wow-delay="800ms">
+                    <div class="akame-portfolio-single-item">
+                        <img src="img/bg-img/10.jpg" alt="">
+
+                        <!-- Overlay Content -->
+                        <div class="overlay-content d-flex align-items-center justify-content-center">
+                            <div class="overlay-text text-center">
+                                <h4>Business Intelligence (BI)</h4>
+                                <p>Easy-to-use interface, decision-makers gain deep visibility into their business operations.</p>
+                                <div style="padding-top: 15px;"><a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff;">More Details</a></div>
+                            </div>
+                        </div>
+
+                        <!-- Thumbnail Zoom -->
+                        <a href="img/bg-img/10.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item efficiency mb-30 wow fadeInUp" data-wow-delay="800ms">
+                        <div class="akame-portfolio-single-item">
+                            <img src="img/bg-img/10.jpg" alt="">
+    
+                            <!-- Overlay Content -->
+                            <div class="overlay-content d-flex align-items-center justify-content-center">
+                                <div class="overlay-text text-center">
+                                    <h4>eCRM</h4>
+                                    <p>Capabilities that extend the impact potential of your EFI management solution to your sales team, making them more efficient and able to quote much faster.</p>
+                                    <div style="padding-top: 15px;"><a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff;">More Details</a></div>
+                                </div>
+                            </div>
+    
+                            <!-- Thumbnail Zoom -->
+                            <a href="img/bg-img/10.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                        </div>
+                    </div>
+
+               <!-- Single Portfolio Item -->
+               <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item efficiency mb-30 wow fadeInUp" data-wow-delay="500ms">
+                    <div class="akame-portfolio-single-item">
+                        <img src="img/bg-img/10e.jpg" alt="">
+
+                        <!-- Overlay Content -->
+                        <div class="overlay-content d-flex align-items-center justify-content-center">
+                            <div class="overlay-text text-center">
+                                <h4>Market Direct Pack Central</h4>
+                                <p>Providing you with the power to manage your clients needs online – capture item orders, re-orders.</p>
+                                <div style="padding-top: 15px;"><a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff;">More Details</a></div>
+                            </div>
+                        </div>
+
+                        <!-- Thumbnail Zoom -->
+                        <a href="img/bg-img/10e.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item efficiency mb-30 wow fadeInUp" data-wow-delay="800ms">
+                    <div class="akame-portfolio-single-item">
+                        <img src="img/bg-img/10e.jpg" alt="">
+
+                        <!-- Overlay Content -->
+                        <div class="overlay-content d-flex align-items-center justify-content-center">
+                            <div class="overlay-text text-center">
+                                <h4>3<sup>rd</sup> Party System Integration</h4>
+                                <p>works with many strategic partners servicing the corrugated industry around the world to enhance the automation and connectivity to plant manufacturing and processing machinery</p>
+                                <div style="padding-top: 15px;"><a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff;">More Details</a></div>
+                            </div>
+                        </div>
+
+                        <!-- Thumbnail Zoom -->
+                        <a href="img/bg-img/10e.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item sustainable mb-30 wow fadeInUp" data-wow-delay="800ms">
+                        <div class="akame-portfolio-single-item">
+                            <img src="img/bg-img/10e.jpg" alt="">
+    
+                            <!-- Overlay Content -->
+                            <div class="overlay-content d-flex align-items-center justify-content-center">
+                                <div class="overlay-text text-center">
+                                    <h4>EFI Trailer Planning</h4>
+                                    <p>Specifies loading times, locations, sequences, quantities, and the specific locations of orders within each trailer.</p>
+                                    <div style="padding-top: 15px;"><a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff;">More Details</a></div>
+                                </div>
+                            </div>
+    
+                            <!-- Thumbnail Zoom -->
+                            <a href="img/bg-img/10e.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                        </div>
+                    </div>
+                    <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item sustainable mb-30 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="akame-portfolio-single-item">
+                            <img src="img/bg-img/10f.jpg" alt="">
+    
+                            <!-- Overlay Content -->
+                            <div class="overlay-content d-flex align-items-center justify-content-center">
+                                <div class="overlay-text text-center">
+                                    <h4>EFI CorrTrim</h4>
+                                    <p>Gives you enhanced cost and order control and ensures that schedulers can produce more efficient and flexible schedules in less time.</p>
+                                    <div style="padding-top: 15px;"><a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff;">More Details</a></div>
+                                </div>
+                            </div>
+    
+                            <!-- Thumbnail Zoom -->
+                            <a href="img/bg-img/10f.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                        </div>
+                    </div>
+    
+                    <!-- Single Portfolio Item -->
+                    <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item sustainable mb-30 wow fadeInUp" data-wow-delay="800ms">
+                        <div class="akame-portfolio-single-item">
+                            <img src="img/bg-img/10f.jpg" alt="">
+    
+                            <!-- Overlay Content -->
+                            <div class="overlay-content d-flex align-items-center justify-content-center">
+                                <div class="overlay-text text-center">
+                                    <h4>EFI Corrlink</h4>
+                                    <p>Automates the communication of information between the planning office and the corrugator crews.</p>
+                                    <div style="padding-top: 15px;"><a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff;">More Details</a></div>
+                                </div>
+                            </div>
+    
+                            <!-- Thumbnail Zoom -->
+                            <a href="img/bg-img/10f.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                        </div>
+                    </div>
+    
+                    <!-- Single Portfolio Item -->
+                    <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item sustainable mb-30 wow fadeInUp" data-wow-delay="800ms">
+                            <div class="akame-portfolio-single-item">
+                                <img src="img/bg-img/10f.jpg" alt="">
+        
+                                <!-- Overlay Content -->
+                                <div class="overlay-content d-flex align-items-center justify-content-center">
+                                    <div class="overlay-text text-center">
+                                        <h4>EFI Roll Stock Management</h4>
+                                        <p>Helps corrugated manufacturers track every aspect of their roll stock inventory, from ordering to consumption.</p>
+                                        <div style="padding-top: 15px;"><a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff;">More Details</a></div>
+                                    </div>
+                                </div>
+        
+                                <!-- Thumbnail Zoom -->
+                                <a href="img/bg-img/10f.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                            </div>
+                        </div>
+                        <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item sustainable mb-30 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="akame-portfolio-single-item">
+                            <img src="img/bg-img/12.jpg" alt="">
+    
+                            <!-- Overlay Content -->
+                            <div class="overlay-content d-flex align-items-center justify-content-center">
+                                <div class="overlay-text text-center">
+                                    <h4>EFI CorrPlan</h4>
+                                    <p>Gives you the ability to determine the most efficient and profitable manufacturing schedule possible</p>
+                                    <div style="padding-top: 15px;"><a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff;">More Details</a></div>
+                                </div>
+                            </div>
+    
+                            <!-- Thumbnail Zoom -->
+                            <a href="img/bg-img/12.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                        </div>
+                    </div>
+    
+                    <!-- Single Portfolio Item -->
+                    <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item sustainable mb-30 wow fadeInUp" data-wow-delay="800ms">
+                        <div class="akame-portfolio-single-item">
+                            <img src="img/bg-img/12.jpg" alt="">
+    
+                            <!-- Overlay Content -->
+                            <div class="overlay-content d-flex align-items-center justify-content-center">
+                                <div class="overlay-text text-center">
+                                    <h4>EFI CorrChain</h4>
+                                    <p>A collaborative, secure, and automated supply chain solution designed specifically for the paper packaging industry.</p>
+                                    <div style="padding-top: 15px;"><a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff;">More Details</a></div>
+                                </div>
+                            </div>
+    
+                            <!-- Thumbnail Zoom -->
+                            <a href="img/bg-img/12.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                        </div>
+                    </div>
+    
+                    <!-- Single Portfolio Item -->
+                    <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item quality mb-30 wow fadeInUp" data-wow-delay="800ms">
+                            <div class="akame-portfolio-single-item">
+                                <img src="img/bg-img/12.jpg" alt="">
+        
+                                <!-- Overlay Content -->
+                                <div class="overlay-content d-flex align-items-center justify-content-center">
+                                    <div class="overlay-text text-center">
+                                        <h4>SYNCRO 7 - Wet and Dry End Control</h4>
+                                        <p>A single point Corrugator Control System, born through years of development in dry end and wet end control.</p>
+                                        <div style="padding-top: 15px;"><a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff;">More Details</a></div>
+                                    </div>
+                                </div>
+        
+                                <!-- Thumbnail Zoom -->
+                                <a href="img/bg-img/12.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                            </div>
+                        </div>
+                        <!-- Single Portfolio Item -->
+                    <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item quality mb-30 wow "  data-wow-delay="0ms">
+                            <div class="akame-portfolio-single-item">
+                                <img src="img/bg-img/10a.jpg" alt="">
+        
+                                <!-- Overlay Content -->
+                                <div class="overlay-content d-flex align-items-center justify-content-center">
+                                    <div class="overlay-text text-center">
+                                        <h4>SYNCRO 7 - Wet and Dry End Control</h4>
+                                        <p>A single point Corrugator Control System, born through years of development in dry end and wet end control.</p>
+                                        <div style="padding-top: 15px;"><a href="#" class=" akame-btn"  style="color:#ffffff;">More Details</a></div>
+                                    </div>
+                                </div>
+        
+                                <!-- Thumbnail Zoom -->
+                                <a href="img/bg-img/10a.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                            </div>
+                        </div>
+                        <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item quality mb-30 wow "  data-wow-delay="0ms">
+                        <div class="akame-portfolio-single-item">
+                            <img src="img/bg-img/10a.jpg" alt="">
+    
+                            <!-- Overlay Content -->
+                            <div class="overlay-content d-flex align-items-center justify-content-center">
+                                <div class="overlay-text text-center">
+                                    <h4>PROFILE Process Control</h4>
+                                    <p>Our process control system which has revolutionised corrugator performance.</p>
+                                    <div style="padding-top: 15px;"><a href="#" class=" akame-btn"  style="color:#ffffff;">More Details</a></div>
+                                </div>
+                            </div>
+    
+                            <!-- Thumbnail Zoom -->
+                            <a href="img/bg-img/10a.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                        </div>
+                    </div>
+    
+                    <!-- Single Portfolio Item -->
+                    <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item quality mb-30 wow " data-wow-delay="0ms" >
+                        <div class="akame-portfolio-single-item">
+                            <img src="img/bg-img/10a.jpg" alt="">
+    
+                            <!-- Overlay Content -->
+                            <div class="overlay-content d-flex align-items-center justify-content-center">
+                                <div class="overlay-text text-center">
+                                    <h4>Clarity</h4>
+                                    <p>Incorporates data from all control systems, making it easier than ever to oversee the entire operation.</p>
+                                    <div style="padding-top: 15px;"><a href="#" class=" akame-btn"  style="color:#ffffff;">More Details</a></div>
+                                </div>
+                            </div>
+    
+                            <!-- Thumbnail Zoom -->
+                            <a href="img/bg-img/10a.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                        </div>
+                    </div>
+    
+                    <!-- Single Portfolio Item -->
+                    <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item digital mb-30 wow " data-wow-delay="0ms">
+                            <div class="akame-portfolio-single-item">
+                                <img src="img/bg-img/10d.jpg" alt="">
+        
+                                <!-- Overlay Content -->
+                                <div class="overlay-content d-flex align-items-center justify-content-center">
+                                    <div class="overlay-text text-center">
+                                        <h4>AC4D Shop Floor Data Collection</h4>
+                                        <p>Making your business more efficient is the DNA on which our suite of solutions for the corrugated industry have been built upon.</p>
+                                        <div style="padding-top: 15px;"><a href="#" class=" akame-btn"  style="color:#ffffff;">More Details</a></div>
+                                    </div>
+                                </div>
+        
+                                <!-- Thumbnail Zoom -->
+                                <a href="img/bg-img/10d.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                            </div>
+                        </div>
+                         <!-- Single Portfolio Item -->
+                    <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item digital mb-30 wow " data-wow-delay="0ms">
+                            <div class="akame-portfolio-single-item">
+                                <img src="img/bg-img/10d.jpg" alt="">
+        
+                                <!-- Overlay Content -->
+                                <div class="overlay-content d-flex align-items-center justify-content-center">
+                                    <div class="overlay-text text-center">
+                                        <h4>EFI Fiery</h4>
+                                        <p>Making your business more efficient is the DNA on which our suite of solutions for the corrugated industry have been built upon.</p>
+                                        <div style="padding-top: 15px;"><a href="#" class=" akame-btn"  style="color:#ffffff;">More Details</a></div>
+                                    </div>
+                                </div>
+        
+                                <!-- Thumbnail Zoom -->
+                                <a href="img/bg-img/10d.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                            </div>
+                        </div>
+                         <!-- Single Portfolio Item -->
+                    <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item digital mb-30 wow " data-wow-delay="0ms">
+                            <div class="akame-portfolio-single-item">
+                                <img src="img/bg-img/10d.jpg" alt="">
+        
+                                <!-- Overlay Content -->
+                                <div class="overlay-content d-flex align-items-center justify-content-center">
+                                    <div class="overlay-text text-center">
+                                        <h4>EFI Nozomi</h4>
+                                        <p>Making your business more efficient is the DNA on which our suite of solutions for the corrugated industry have been built upon.</p>
+                                        <div style="padding-top: 15px;"><a href="#" class=" akame-btn"  style="color:#ffffff;">More Details</a></div>
+                                    </div>
+                                </div>
+        
+                                <!-- Thumbnail Zoom -->
+                                <a href="img/bg-img/10d.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                            </div>
+                        </div>
+                         <!-- Single Portfolio Item -->
+                    <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item digital mb-30 wow " data-wow-delay="0ms">
+                            <div class="akame-portfolio-single-item">
+                                <img src="img/bg-img/10e.jpg" alt="">
+        
+                                <!-- Overlay Content -->
+                                <div class="overlay-content d-flex align-items-center justify-content-center">
+                                    <div class="overlay-text text-center">
+                                        <h4>HIGHCON - Digital Cutting & Creasing</h4>
+                                        <p>Making your business more efficient is the DNA on which our suite of solutions for the corrugated industry have been built upon.</p>
+                                        <div style="padding-top: 15px;"><a href="#" class=" akame-btn"  style="color:#ffffff;">More Details</a></div>
+                                    </div>
+                                </div>
+        
+                                <!-- Thumbnail Zoom -->
+                                <a href="img/bg-img/10e.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                            </div>
+                        </div>
+                        <!-- Single Portfolio Item -->
+                    <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item consulting mb-30 wow " data-wow-delay="0ms">
+                            <div class="akame-portfolio-single-item">
+                                <img src="img/bg-img/10e.jpg" alt="">
+        
+                                <!-- Overlay Content -->
+                                <div class="overlay-content d-flex align-items-center justify-content-center">
+                                    <div class="overlay-text text-center">
+                                        <h4>Roll Stock Analysis</h4>
+                                        <p>Making your business more efficient is the DNA on which our suite of solutions for the corrugated industry have been built upon.</p>
+                                        <div style="padding-top: 15px;"><a href="#" class=" akame-btn"  style="color:#ffffff;">More Details</a></div>
+                                    </div>
+                                </div>
+        
+                                <!-- Thumbnail Zoom -->
+                                <a href="img/bg-img/10e.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                            </div>
+                        </div>
+                        <!-- Single Portfolio Item -->
+                    <div class="col-12 col-sm-6 col-lg-4 akame-portfolio-item consulting mb-30 wow " data-wow-delay="0ms">
+                            <div class="akame-portfolio-single-item">
+                                <img src="img/bg-img/10e.jpg" alt="">
+        
+                                <!-- Overlay Content -->
+                                <div class="overlay-content d-flex align-items-center justify-content-center">
+                                    <div class="overlay-text text-center">
+                                        <h4>Services Led Upgrade</h4>
+                                        <p>Making your business more efficient is the DNA on which our suite of solutions for the corrugated industry have been built upon.</p>
+                                        <div style="padding-top: 15px;"><a href="#" class=" akame-btn"  style="color:#ffffff;">More Details</a></div>
+                                    </div>
+                                </div>
+        
+                                <!-- Thumbnail Zoom -->
+                                <a href="img/bg-img/10e.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                            </div>
+                        </div>
+    
+    
+    
+
+            </div>
+
+            <!-- <div class="row">
+                <div class="col-12">
+                    <div class="view-all-btn mt-30 text-center">
+                        <a href="portfolio.html" class="btn akame-btn">View All Work</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <!-- Portfolio Area End -->
+
+    
+ 
+                        
+
+	
+
+
+
+    <!-- Call To Action Area Start -->
+    <section class="akame-cta-area bg-gray section-padding-80">
+        <div class="container">
+            <div class="row">
+                    <div class="col-12 col-sm-10 col-xl-5">
+                            <div class="cta-content">
+                                
+                                    <div class="video-container"><iframe width="450" height="325" src="https://www.youtube.com/embed/8lqo4PrT0Ik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; " allowfullscreen></iframe></div>
+                                </div>
+                                <!--<div class="akame-btn-group mt-30">
+                                        <a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff; ">Watch Video</a>
+                                        
+                                </div>-->
+                            </div>
+                
+                <div class="col-12 col-sm-10 col-xl-7">
+                    <div class="cta-content">
+                        <h2>Learn More</h2>
+                        <p>EFI’s end-to-end Packaging Software Suite offers packaging converters across the globe future-ready technology that enables them to reduce cost of sales, increase margins, and drive revenue. Learn how in our eBook.</p>
+                        <div class="akame-btn-group mt-30">
+                                <a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff; ">Download eBook</a>
+                                <a href="#" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff; ">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                
+                    </div>
+            </div>
+        </div>
+
+        <!-- CTA Thumbnail -->
+        <div class="cta-thumbnail bg-img" style="background-image: url(img/bg-img/cta.png);"></div>
+    </section>
+    <!-- Call To Action Area End -->
+
+   <!-- Footer Area Start -->
+   <footer class="footer wow fadeInDown" style="background-color:#ccc !important; ">
+    <div class="container" style=" background-color:#ccc; padding-top:35px">
+  <div class="row">
+        <div class="col-lg-6 col-sm-6 footer-links text-left footer-text" style="text-align: left">
+        
+          <a href="https://www.efi.com/legal/privacy/">Privacy Policy</a>  &nbsp;|&nbsp;  <a href="https://www.efi.com/legal/terms-of-use/">Terms of Use</a>  &nbsp;|&nbsp;  <a href="https://www.efi.com/about-efi/contact-us/">Contact Us</a>
+        <p class="footer-text"><a href="https://www.efi.com/legal/copyright/">©2020 Electronics For Imaging, Inc. All Rights Reserved.</a></p> 
+      </div>
+      <div class="col-lg-6 col-sm-6" style="text-align:right;margin-top: 15px;">
+          
+       <a href="https://www.facebook.com/EFIPrint/" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; display: inline-block; margin: 0 6px 0 6px;"><img alt="Facebook Icon" src="https://www.efi.com/library/efi/images/shared/icons/social_media/facebook_icon.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; line-height: 100%; width: 20px; height: auto; display: inline-block; border-width: 0; border-style: none;"></a>
+<a href="https://www.linkedin.com/company/efiprint" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; display: inline-block; margin: 0 6px 0 6px;"><img alt="LinkedIn Icon" src="https://www.efi.com/library/efi/images/shared/icons/social_media/linkedin_icon.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; line-height: 100%; width: 20px; height: auto; display: inline-block; border-width: 0; border-style: none;"></a>
+<a href="https://twitter.com/EFIPrint" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; display: inline-block; margin: 0 6px 0 6px;"><img alt="Twitter Icon" src="https://www.efi.com/library/efi/images/shared/icons/social_media/twitter_icon.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; line-height: 100%; width: 20px; height: auto; display: inline-block; border-width: 0; border-style: none;"></a>
+<a href="https://www.youtube.com/user/EFIDigitalPrintTech" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; display: inline-block; margin: 0 6px 0 6px;"><img alt="Youtube Icon" src="https://go.efi.com/rs/559-INV-406/images/EFI_Social_YouTube.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; line-height: 100%; width: 20px; height: auto; display: inline-block; border-width: 0; border-style: none;"></a>
+<a href="https://www.instagram.com/efiprint/" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; display: inline-block; margin: 0 6px 0 6px;"><img alt="Instagram Icon" src="https://go.efi.com/rs/559-INV-406/images/EFI_Social_Instagram.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; line-height: 100%; width: 20px; height: auto; display: inline-block; border-width: 0; border-style: none;"></a>
+        
+      </div>
+  </div>
+</div>
+</footer>
+<!-- End Footer Bottom -->
+
+    <script type="text/javascript">
+        if (typeof MktoForms2 !== 'undefined') {
+            //add a callback to the first ready form on the page
+            MktoForms2.whenReady(function (form) {
+                if (Cookies.get("_mkto_form_submit") != undefined) {
+                    //add the tracking field to be submitted
+                    form.addHiddenFields({
+                        "_mkt_trk": ""
+                    });
+                    form.addHiddenFields({
+                        "munchkinId": ""
+                    });
+      
+                    //clear the value during the onSubmit event to prevent tracking association
+                    form.onSubmit(function (form) {
+                        form.vals({
+                            "_mkt_trk": ""
+                        });
+                        form.vals({
+                            "munchkinId": ""
+                        });
+              if (Cookies.get("go_efi") != 'y' ||
+                (Cookies.get("go_efi") == 'y' && Cookies.get("go_efi_consent") == "allow")) {
+                Cookies.set("_mkto_form_submit", "yes");
+                        }
+                    })
+                } else {
+                    //clear the value during the onSubmit event to prevent tracking association
+            form.onSubmit(function (form) {
+              if (Cookies.get("go_efi") != 'y' ||
+                (Cookies.get("go_efi") == 'y' && Cookies.get("go_efi_consent") == "allow")) {
+                Cookies.set("_mkto_form_submit", "yes");
+                      }
+                    })
+                }
+            })
+        }
+      </script>
+      
+      <!-- All JS Files --> 
+      <!-- jQuery --> 
+      <script src="js/jquery.min.js"></script> 
+      <!-- Popper --> 
+      <script src="js/popper.min.js"></script> 
+      <!-- Bootstrap --> 
+      <script src="js/bootstrap.min.js"></script> 
+      <!-- All Plugins --> 
+      <script src="js/akame.bundle.js"></script> 
+      <!-- Active --> 
+      <script src="js/default-assets/active.js"></script>
+      
+      <script src="//go.efi.com/rs/559-INV-406/images/cookie-consent-popup.js"></script>
+      <style>  #PureChatWidget.purechat.purechat-bottom-right {
+        bottom: 70px !important;
+      }
+      </style>
+      <script type="text/javascript" src="https://go.efi.com/js/stripmkttok.js"></script>
+
+
+</body>
+
+</html>

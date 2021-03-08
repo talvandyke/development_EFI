@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Title -->
+<title>EFI - MarketDirect Suite</title>
+
+<!-- Favicon -->
+<link rel="icon" href="###">
+
+<!-- Stylesheet -->
+
+<link rel="stylesheet" href="efi.css">
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/form_styles_ci.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600&display=swap" rel="stylesheet">
+<script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
+
+<!-- Munchkin: begin --> 
+<script type="text/javascript">
+  if (window.location.host.toLowerCase() === "go.efi.com" || window.location.host.toLowerCase() === "www.go.efi.com") {
+      if (Cookies.get("go_efi") != 'y' ||
+          (Cookies.get("go_efi") == 'y' && Cookies.get("go_efi_consent") == "allow")) {
+          (function () {
+              var didInit = false;
+              function initMunchkin() {
+                  if (didInit === false) {
+                      didInit = true;
+                      Munchkin.init('559-INV-406', { "domainLevel": 3 });
+                  }
+              }
+              var s = document.createElement('script');
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = 'https://munchkin.marketo.net/munchkin.js';
+              s.onreadystatechange = function () {
+                  if (this.readyState == 'complete' || this.readyState == 'loaded') {
+                      initMunchkin();
+                  }
+              };
+              s.onload = initMunchkin;
+              document.getElementsByTagName('head')[0].appendChild(s);
+          })();
+      }
+  }
+</script>
+<script type="text/javascript" async="" src="https://munchkin.marketo.net/munchkin.js"></script>
+<!-- Munchkin: end --> 
+
+<style type="text/css">
+  @media only screen and (max-width: 600px) {
+     .carousel .img-box img  {
+         width: 70% !important;
+     height: 70% !important;
+     display: block;
+     } 
+  } 
+ .row:before, .row:after {display: none !important;} 
+ </style>
+</head>
+
+<body>
+<!-- Preloader -->
+<div id="preloader">
+  <div class="loader"></div>
+</div>
+<!-- /Preloader --> 
+
+<!-- Header Area Start -->
+<header class="header-area"> 
+  
+  <!-- Top Header Area End --> 
+  
+  <!-- Main Header Start -->
+  <div class="main-header-area">
+    <div class="classy-nav-container breakpoint-off">
+      <div class="container"> 
+		  
+		 
+		  <nav class="navbar navbar-expand-lg" >
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+		  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-top:0px;margin-bottom:0px;" >
+    <ul class="navbar-nav mr-auto" style="font-size: 11px;"> 
+      <li class="nav-item active">
+        <a class="nav-link" href="https://shop.efi.com/">shop.efi.com <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.efi.com/efi-portals/">Portal Login</a>
+      </li>
+		 <li class="nav-item">
+        <a class="nav-link" href="https://www.efi.com/about-efi/contact-us/">Contact Us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="img/nav/globe.png"> Countries
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          
+			<a class="dropdown-item" href="#"><img src="img/nav/flag_usa.png"> United States (English)</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#"><img src="img/nav/flag_brazil.png"> Brasil (Portugues)</a>
+			<div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#"><img src="img/nav/flag_france.png"> France (Français)</a>
+			 <a class="dropdown-item" href="#"><img src="img/nav/flag_germany.png"> Deutschland (Deutsch)</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#"><img src="img/nav/flag_italy.png"> Italia (italiano)</a>
+			<a class="dropdown-item" href="#"><img src="img/nav/flag_spain.png"> España (Español)</a>
+			<a class="dropdown-item" href="#"><img src="img/nav/flag_great_britain.png"> United Kingdom (English)</a>
+			 <div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#"><img src="img/nav/flag_china.png"> China</a>
+			<a class="dropdown-item" href="#"><img src="img/nav/flag_japan.png"> Japan</a>
+			
+        </div>
+      </li>
+      
+    </ul>
+	  
+    <form name="searchForm" id="searchForm" method="post" style="padding-left:0px;padding-top:15px;font-size:11px">
+                <input type="text" name="searchTerm" class="searchBox" placeholder="Search">
+            </form>
+  </div>
+			  
+			  	   
+			  <script type="text/javascript">
+    $('.searchBox').keypress(function (e) {
+        var key = e.which;
+        if (key == 13)  // the enter key code
+        {
+            var st = this.value;
+            window.location.href = "/search/" + "?term=" + st;
+            return false;
+        }
+    });
+</script>
+</nav>
+		  
+        <!-- Classy Menu -->
+        <nav class="classy-navbar justify-content-between" id="akameNav"> 
+          
+          <!-- Logo --> 
+          <a class="nav-brand" href="index.html"><img src="img/efi_logo_100x65.png" alt=""></a> 
+          
+          <!-- Navbar Toggler -->
+          <div class="classy-navbar-toggler"> <span class="navbarToggler"><span></span><span></span><span></span></span> </div>
+          
+			
+			
+          <!-- Menu -->
+          
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Header Area End --> 
+
+
+
+
+<!-- New Header Start -->
+<section class="welcome-area welcomeBKG ">
+  <div > 
+    <!-- Single Welcome Slide -->
+    <div > 
+      <!-- Welcome Content -->
+      <div >
+        <div class="container ">
+          <div class="row "> 
+            <!-- Welcome Text -->
+            
+            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 order-lg-1 order-md-1 order-sm-1 order-xs-1 pr-4 pl-4" style="background-color: #e9bc26" >
+              
+                
+                <img class="pt-4 img-fluid" style="vertical-align: top !important;" src="img/casestudy/efi_fiery_integration_apogee_skanetryck_cs_en_us-1.jpg"  />
+				<p class="pt-3 mb-0" style="font-size: 1.75rem;padding-bottom:0px;" data-animation="fadeInUp" data-delay="400ms" ><strong>Challenge:</strong></p>
+				  <p class="pt-0" style="font-size: 1.25rem;color:#ffffff" data-animation="fadeInUp" data-delay="400ms" >When going digital one concern was whether they had to control
+different RIPs separately or if they could continue using the existing
+Agfa :Apogee workflow system.</p>
+<p  style="font-size: 1.25rem;color:#ffffff" data-animation="fadeInUp" data-delay="400ms">The seamless integration of the EFI™ Fiery® server with Agfa’s :Apogee
+workflow system is the key element to production efficiency and
+business growth at Skånetryck.</p>
+				<p class="pt-3 mb-0" style="font-size: 1.75rem" data-animation="fadeInUp" data-delay="400ms" ><strong>Results:</strong></p>
+				  <p class="pt-0" style="font-size: 1.25rem;color:#ffffff;padding-top:0px;" data-animation="fadeInUp" data-delay="400ms" >We thought digital would
+be a nice little complement
+to our existing production,
+but it has become the
+fastest growing side of
+the business.</p>
+            </div>
+            
+            <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 order-lg-2 order-md-2 order-sm-2 order-xs-2" >
+              <div class="welcome-text">
+                <h3 class="pb-3" data-animation="fadeInUp" data-delay="100ms" style="color:#e9bc26;font-size:2.25rem;
+                line-height: 1.15;font-family: 'Raleway', sans-serif;font-weight:bold;">EFI Fiery DFE integration to Agfa :Apogee: Skånetryck case study</h3>
+				  <h4 class="pb-5" data-animation="fadeInUp" data-delay="100ms" style="font-size:1.5rem;
+                line-height: 1.15;font-family: 'Raleway', sans-serif;font-weight:bold;">Offset Meets Digital: Seamless Hybrid
+Workflow Integration at Skånetryck</h4>
+				  
+				  <div class="btn-toolbar pb-5 " data-toggle="buttons" > 
+                  <div style="padding-bottom:25px; padding-right:25px;"><a href="MarketDirect VDP" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff;text-decoration: none;font-family:Helvetica Neue,Helvetica,Arial,sans-serif; background-color:#e9bc26 !important;">Download Now</a></div>
+                  <a href="https://www.efi.com/support-and-downloads/product-support/" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff; text-decoration: none;color:#ffffff;text-decoration: none;font-family:Helvetica Neue,Helvetica,Arial,sans-serif; background-color:#e9bc26 !important;">Request a Demo</a>
+          </div>
+                <!-- Our Service Area End --> 
+
+<div class="container" >
+  <div class="border-top mt-3" style="padding-top:50px; "></div>
+</div>
+
+				  
+				  <p data-animation="fadeInUp" data-delay="400ms" ><strong>Solution:</strong></p>
+				  <p data-animation="fadeInUp" data-delay="400ms" >Within hours from when
+the technician said he was
+ready we started real life
+production—this is how
+easy the Fiery system is
+to operate, and how well
+it integrated with our
+:Apogee workflow.</p>
+				  
+				  
+				  
+				  <p data-animation="fadeInUp" data-delay="400ms" ><strong>What's Next:</strong></p>
+				  <p data-animation="fadeInUp" data-delay="400ms" >The Fiery system can be extended with MIS and web-to-print solutions,
+and this is something Skånetryck is looking into. But since digital
+production is fairly new to the company the increased demand is the
+					  first thing to manage.</p>
+ <p data-animation="fadeInUp" data-delay="400ms" >“We thought digital would be a nice little complement to our existing
+production, but it has become the fastest growing side of the business,”
+	 explains Håkan.</p>
+				   <p data-animation="fadeInUp" data-delay="400ms" >
+“We need to expand this faster and sooner than expected, and perhaps
+include large-format in the mix,” says Walhed. “We know EFI to be good
+at those types of solutions as well, so we are quite confident they are
+likely to be part of our expansion.</p>
+                
+                  
+                
+                
+             <form accept-charset="UTF-8" method="post" action="https://go.pardot.com/l/33192/2020-02-06/8tdj4b" class="form" id="pardot-form">
+
+				<style type="text/css">
+								form.form p label {
+												color: #000000;
+								}
+					span.description{
+						font-size:10px !important;
+					}
+					#pardot-form p.form-field label{
+						font-size:14px !important;
+					}
+				</style>
+
+				<div class="thank-you"></div>
+
+				<div class="before">
+								<h2>Above form H2</h2>
+
+								<p>Some above form text with
+												<a href="https://cheshireimpact.com" target="_top">a link in it.</a>
+								</p>
+
+				</div>
+
+				<p class="form-field first_name pd-text required col-6">
+
+								<label class="field-label" for="33192_234435pi_33192_234435">First Name</label>
+
+								<input type="text" name="33192_234435pi_33192_234435" id="33192_234435pi_33192_234435" value="" class="text" size="30" maxlength="40" onchange="" onfocus="">
+
+				</p>
+				<div id="error_for_33192_234435pi_33192_234435" style="display:none"></div>
+
+				<p class="form-field last_name pd-text required col-6">
+
+								<label class="field-label" for="33192_234437pi_33192_234437">Last Name</label>
+
+								<input type="text" name="33192_234437pi_33192_234437" id="33192_234437pi_33192_234437" value="" class="text" size="30" maxlength="80" onchange="" onfocus="">
+
+								<span class="description">This is a form field description</span>
+
+				</p>
+				<div id="error_for_33192_234437pi_33192_234437" style="display:none"></div>
+
+				<p class="form-field company pd-text col-6">
+
+								<label class="field-label" for="33192_234439pi_33192_234439">Company</label>
+
+								<input type="text" name="33192_234439pi_33192_234439" id="33192_234439pi_33192_234439" value="" class="text" size="30" maxlength="255" onchange="" onfocus="">
+
+				</p>
+				<div id="error_for_33192_234439pi_33192_234439" style="display:none"></div>
+
+				<p class="form-field email pd-text required col-6">
+
+								<label class="field-label" for="33192_234441pi_33192_234441">Email</label>
+
+								<input type="text" name="33192_234441pi_33192_234441" id="33192_234441pi_33192_234441" value="" class="text" size="30" maxlength="255" onchange="piAjax.auditEmailField(this, 33192, 234441, 189850599);" onfocus="">
+
+				</p>
+				<div id="error_for_33192_234441pi_33192_234441" style="display:none"></div>
+
+				<p class="form-field country pd-select col-6">
+
+								<label class="field-label" for="33192_234443pi_33192_234443">Country</label>
+
+								<select name="33192_234443pi_33192_234443" id="33192_234443pi_33192_234443" class="select" onchange="">
+												<option value="3731467" selected="selected"></option>
+												<option value="3731469">United States</option>
+												<option value="3731471">Canada</option>
+												<option value="3731473">Afghanistan</option>
+												<option value="3731475">Albania</option>
+												<option value="3731477">Algeria</option>
+												<option value="3731479">American Samoa</option>
+												<option value="3731481">Andorra</option>
+												<option value="3731483">Angola</option>
+												<option value="3731485">Anguilla</option>
+												<option value="3731487">Antarctica</option>
+												<option value="3731489">Antigua and Barbuda</option>
+												<option value="3731491">Argentina</option>
+												<option value="3731493">Armenia</option>
+												<option value="3731495">Aruba</option>
+												<option value="3731497">Australia</option>
+												<option value="3731499">Austria</option>
+												<option value="3731501">Azerbaijan</option>
+												<option value="3731503">Bahamas</option>
+												<option value="3731505">Bahrain</option>
+												<option value="3731507">Bangladesh</option>
+												<option value="3731509">Barbados</option>
+												<option value="3731511">Belarus</option>
+												<option value="3731513">Belgium</option>
+												<option value="3731515">Belize</option>
+												<option value="3731517">Benin</option>
+												<option value="3731519">Bermuda</option>
+												<option value="3731521">Bhutan</option>
+												<option value="3731523">Bolivia</option>
+												<option value="3731525">Bosnia and Herzegovina</option>
+												<option value="3731527">Botswana</option>
+												<option value="3731529">Brazil</option>
+												<option value="3731531">British Indian Ocean Territory</option>
+												<option value="3731533">British Virgin Islands</option>
+												<option value="3731535">Brunei</option>
+												<option value="3731537">Bulgaria</option>
+												<option value="3731539">Burkina Faso</option>
+												<option value="3731541">Burundi</option>
+												<option value="3731543">Cambodia</option>
+												<option value="3731545">Cameroon</option>
+												<option value="3731547">Cape Verde</option>
+												<option value="3731549">Cayman Islands</option>
+												<option value="3731551">Central African Republic</option>
+												<option value="3731553">Chad</option>
+												<option value="3731555">Chile</option>
+												<option value="3731557">China</option>
+												<option value="3731559">Christmas Island</option>
+												<option value="3731561">Cocos (Keeling) Islands</option>
+												<option value="3731563">Colombia</option>
+												<option value="3731565">Comoros</option>
+												<option value="3731567">Congo</option>
+												<option value="3731569">Cook Islands</option>
+												<option value="3731571">Costa Rica</option>
+												<option value="3731573">Croatia</option>
+												<option value="3731575">Cuba</option>
+												<option value="3731577">Curaçao</option>
+												<option value="3731579">Cyprus</option>
+												<option value="3731581">Czech Republic</option>
+												<option value="3731583">Côte d’Ivoire</option>
+												<option value="3731585">Democratic Republic of the Congo</option>
+												<option value="3731587">Denmark</option>
+												<option value="3731589">Djibouti</option>
+												<option value="3731591">Dominica</option>
+												<option value="3731593">Dominican Republic</option>
+												<option value="3731595">Ecuador</option>
+												<option value="3731597">Egypt</option>
+												<option value="3731599">El Salvador</option>
+												<option value="3731601">Equatorial Guinea</option>
+												<option value="3731603">Eritrea</option>
+												<option value="3731605">Estonia</option>
+												<option value="3731607">Ethiopia</option>
+												<option value="3731609">Falkland Islands</option>
+												<option value="3731611">Faroe Islands</option>
+												<option value="3731613">Fiji</option>
+												<option value="3731615">Finland</option>
+												<option value="3731617">France</option>
+												<option value="3731619">French Guiana</option>
+												<option value="3731621">French Polynesia</option>
+												<option value="3731623">French Southern Territories</option>
+												<option value="3731625">Gabon</option>
+												<option value="3731627">Gambia</option>
+												<option value="3731629">Georgia</option>
+												<option value="3731631">Germany</option>
+												<option value="3731633">Ghana</option>
+												<option value="3731635">Gibraltar</option>
+												<option value="3731637">Greece</option>
+												<option value="3731639">Greenland</option>
+												<option value="3731641">Grenada</option>
+												<option value="3731643">Guadeloupe</option>
+												<option value="3731645">Guam</option>
+												<option value="3731647">Guatemala</option>
+												<option value="3731649">Guernsey</option>
+												<option value="3731651">Guinea</option>
+												<option value="3731653">Guinea-Bissau</option>
+												<option value="3731655">Guyana</option>
+												<option value="3731657">Haiti</option>
+												<option value="3731659">Honduras</option>
+												<option value="3731661">Hong Kong S.A.R., China</option>
+												<option value="3731663">Hungary</option>
+												<option value="3731665">Iceland</option>
+												<option value="3731667">India</option>
+												<option value="3731669">Indonesia</option>
+												<option value="3731671">Iran</option>
+												<option value="3731673">Iraq</option>
+												<option value="3731675">Ireland</option>
+												<option value="3731677">Isle of Man</option>
+												<option value="3731679">Israel</option>
+												<option value="3731681">Italy</option>
+												<option value="3731683">Jamaica</option>
+												<option value="3731685">Japan</option>
+												<option value="3731687">Jersey</option>
+												<option value="3731689">Jordan</option>
+												<option value="3731691">Kazakhstan</option>
+												<option value="3731693">Kenya</option>
+												<option value="3731695">Kiribati</option>
+												<option value="3731697">Kuwait</option>
+												<option value="3731699">Kyrgyzstan</option>
+												<option value="3731701">Laos</option>
+												<option value="3731703">Latvia</option>
+												<option value="3731705">Lebanon</option>
+												<option value="3731707">Lesotho</option>
+												<option value="3731709">Liberia</option>
+												<option value="3731711">Libya</option>
+												<option value="3731713">Liechtenstein</option>
+												<option value="3731715">Lithuania</option>
+												<option value="3731717">Luxembourg</option>
+												<option value="3731719">Macao S.A.R., China</option>
+												<option value="3731721">Macedonia</option>
+												<option value="3731723">Madagascar</option>
+												<option value="3731725">Malawi</option>
+												<option value="3731727">Malaysia</option>
+												<option value="3731729">Maldives</option>
+												<option value="3731731">Mali</option>
+												<option value="3731733">Malta</option>
+												<option value="3731735">Marshall Islands</option>
+												<option value="3731737">Martinique</option>
+												<option value="3731739">Mauritania</option>
+												<option value="3731741">Mauritius</option>
+												<option value="3731743">Mayotte</option>
+												<option value="3731745">Mexico</option>
+												<option value="3731747">Micronesia</option>
+												<option value="3731749">Moldova</option>
+												<option value="3731751">Monaco</option>
+												<option value="3731753">Mongolia</option>
+												<option value="3731755">Montenegro</option>
+												<option value="3731757">Montserrat</option>
+												<option value="3731759">Morocco</option>
+												<option value="3731761">Mozambique</option>
+												<option value="3731763">Myanmar</option>
+												<option value="3731765">Namibia</option>
+												<option value="3731767">Nauru</option>
+												<option value="3731769">Nepal</option>
+												<option value="3731771">Netherlands</option>
+												<option value="3731773">New Caledonia</option>
+												<option value="3731775">New Zealand</option>
+												<option value="3731777">Nicaragua</option>
+												<option value="3731779">Niger</option>
+												<option value="3731781">Nigeria</option>
+												<option value="3731783">Niue</option>
+												<option value="3731785">Norfolk Island</option>
+												<option value="3731787">North Korea</option>
+												<option value="3731789">Northern Mariana Islands</option>
+												<option value="3731791">Norway</option>
+												<option value="3731793">Oman</option>
+												<option value="3731795">Pakistan</option>
+												<option value="3731797">Palau</option>
+												<option value="3731799">Palestinian Territory</option>
+												<option value="3731801">Panama</option>
+												<option value="3731803">Papua New Guinea</option>
+												<option value="3731805">Paraguay</option>
+												<option value="3731807">Peru</option>
+												<option value="3731809">Philippines</option>
+												<option value="3731811">Pitcairn</option>
+												<option value="3731813">Poland</option>
+												<option value="3731815">Portugal</option>
+												<option value="3731817">Puerto Rico</option>
+												<option value="3731819">Qatar</option>
+												<option value="3731821">Romania</option>
+												<option value="3731823">Russia</option>
+												<option value="3731825">Rwanda</option>
+												<option value="3731827">Réunion</option>
+												<option value="3731829">Saint Barthélemy</option>
+												<option value="3731831">Saint Helena</option>
+												<option value="3731833">Saint Kitts and Nevis</option>
+												<option value="3731835">Saint Lucia</option>
+												<option value="3731837">Saint Pierre and Miquelon</option>
+												<option value="3731839">Saint Vincent and the Grenadines</option>
+												<option value="3731841">Samoa</option>
+												<option value="3731843">San Marino</option>
+												<option value="3731845">Sao Tome and Principe</option>
+												<option value="3731847">Saudi Arabia</option>
+												<option value="3731849">Senegal</option>
+												<option value="3731851">Serbia</option>
+												<option value="3731853">Seychelles</option>
+												<option value="3731855">Sierra Leone</option>
+												<option value="3731857">Singapore</option>
+												<option value="3731859">Slovakia</option>
+												<option value="3731861">Slovenia</option>
+												<option value="3731863">Solomon Islands</option>
+												<option value="3731865">Somalia</option>
+												<option value="3731867">South Africa</option>
+												<option value="3731869">South Korea</option>
+												<option value="3731871">South Sudan</option>
+												<option value="3731873">Spain</option>
+												<option value="3731875">Sri Lanka</option>
+												<option value="3731877">Sudan</option>
+												<option value="3731879">Suriname</option>
+												<option value="3731881">Svalbard and Jan Mayen</option>
+												<option value="3731883">Swaziland</option>
+												<option value="3731885">Sweden</option>
+												<option value="3731887">Switzerland</option>
+												<option value="3731889">Syria</option>
+												<option value="3731891">Taiwan</option>
+												<option value="3731893">Tajikistan</option>
+												<option value="3731895">Tanzania</option>
+												<option value="3731897">Thailand</option>
+												<option value="3731899">Timor-Leste</option>
+												<option value="3731901">Togo</option>
+												<option value="3731903">Tokelau</option>
+												<option value="3731905">Tonga</option>
+												<option value="3731907">Trinidad and Tobago</option>
+												<option value="3731909">Tunisia</option>
+												<option value="3731911">Turkey</option>
+												<option value="3731913">Turkmenistan</option>
+												<option value="3731915">Turks and Caicos Islands</option>
+												<option value="3731917">Tuvalu</option>
+												<option value="3731919">U.S. Virgin Islands</option>
+												<option value="3731921">Uganda</option>
+												<option value="3731923">Ukraine</option>
+												<option value="3731925">United Arab Emirates</option>
+												<option value="3731927">United Kingdom</option>
+												<option value="3731929">United States Minor Outlying Islands</option>
+												<option value="3731931">Uruguay</option>
+												<option value="3731933">Uzbekistan</option>
+												<option value="3731935">Vanuatu</option>
+												<option value="3731937">Vatican</option>
+												<option value="3731939">Venezuela</option>
+												<option value="3731941">Viet Nam</option>
+												<option value="3731943">Wallis and Futuna</option>
+												<option value="3731945">Western Sahara</option>
+												<option value="3731947">Yemen</option>
+												<option value="3731949">Zambia</option>
+												<option value="3731951">Zimbabwe</option>
+								</select>
+
+				</p>
+				<div id="error_for_33192_234443pi_33192_234443" style="display:none"></div>
+				 
+				 
+
+				<p class="form-field company pd-text col-6">
+
+								<label class="field-label" for="33192_234439pi_33192_234439">Phone</label>
+
+								<input type="text"  value="" class="text" size="30" maxlength="255" onchange="" onfocus="">
+
+				</p>
+				
+
+				<p class="form-field comments pd-textarea required col-12">
+
+								<label class="field-label" for="33192_234541pi_33192_234541">Comments</label>
+
+								<textarea name="33192_234541pi_33192_234541" id="33192_234541pi_33192_234541" onchange="" cols="40" rows="10" class="standard"></textarea>
+
+				</p>
+				<div id="error_for_33192_234541pi_33192_234541" style="display:none"></div>
+
+				<p class="form-field opted_out pd-radio required col-12">
+
+								<label class="field-label" for="33192_234543pi_33192_234543">Radio Label</label>
+
+								<span class="value"><span class="" style=""><input type="radio" name="33192_234543pi_33192_234543[]" id="33192_234543pi_33192_234543_3732037_3732037" value="3732037" onchange="">
+																<label class="inline" for="33192_234543pi_33192_234543_3732037_3732037">Yes</label></span></span>
+
+								<span class="description">This is the description of the radio field.</span>
+
+				</p>
+				<div id="error_for_33192_234543pi_33192_234543" style="display:none"></div>
+
+				<p class="form-field I_Agree pd-checkbox required col-12">
+
+								<label class="field-label" for="33192_234545pi_33192_234545">Checkbox Label</label>
+
+								<span class="value"><span><input type="checkbox" name="33192_234545pi_33192_234545_3732041" id="33192_234545pi_33192_234545_3732041" value="3732041" onchange="">
+																<label class="inline" for="33192_234545pi_33192_234545_3732041">Yes</label>
+												</span><span><input type="checkbox" name="33192_234545pi_33192_234545_3732043" id="33192_234545pi_33192_234545_3732043" value="3732043" onchange="">
+																<label class="inline" for="33192_234545pi_33192_234545_3732043">No</label></span></span>
+
+								<span class="description">This is the description of the checkbox field.</span>
+
+				</p>
+				<div id="error_for_33192_234545pi_33192_234545" style="display:none"></div>
+
+				<p class="form-field Allie_Test_Field pd-checkbox required no-label col-12">
+
+								<span class="value"><span><input type="checkbox" name="33192_236217pi_33192_236217_3745695" id="33192_236217pi_33192_236217_3745695" value="3745695" onchange="">
+																<label class="inline" for="33192_236217pi_33192_236217_3745695">Checkbox No Label Field</label></span></span>
+
+				</p>
+				<div id="error_for_33192_236217pi_33192_236217" style="display:none"></div>
+
+				<p class="form-field %%form-field-css-classes%% pd-captcha required hidden   %%form-field-dependency-css%%"></p>
+				<div class="g-recaptcha" data-sitekey="6LfVnCYTAAAAAB4x9xlkeTsV8CO6np5UMhNjRNNZ">
+								<div style="width: 304px; height: 78px;">
+												<div>
+																<iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfVnCYTAAAAAB4x9xlkeTsV8CO6np5UMhNjRNNZ&amp;co=aHR0cHM6Ly9nby5wYXJkb3QuY29tOjQ0Mw..&amp;hl=en&amp;v=IU7gZ7o6RDdDE6U4Y1YJJWnN&amp;size=normal&amp;cb=ieejj7qpc7cp" width="304" height="78" role="presentation" name="a-ejr1z5yg7f8t" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+												</div>
+												<textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+								</div>
+								<iframe style="display: none;"></iframe>
+				</div>
+				<script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
+
+				<p></p>
+				<div id="error_for_Recaptchapi_Recaptcha" style="display:none"></div>
+
+				<p style="position:absolute; width:190px; left:-9999px; top: -9999px;visibility:hidden;">
+								<label for="pi_extra_field">Comments</label>
+								<input type="text" name="pi_extra_field" id="pi_extra_field">
+				</p>
+
+				<!-- forces IE5-8 to correctly submit UTF8 content -->
+				<input name="_utf8" type="hidden" value="☃">
+
+				<p class="submit">
+								<input type="submit" accesskey="s" value="Submit">
+				</p>
+				<div class="after">
+								<p>Below form text with
+												<a href="https://cheshireimpact.com" target="_top">a link in it.</a>
+								</p>
+
+				</div>
+
+				<script type="text/javascript">
+								//<![CDATA[
+								var anchors = document.getElementsByTagName("a");
+								for (var i = 0; i < anchors.length; i++) {
+												var anchor = anchors[i];
+												if (anchor.getAttribute("href") && !anchor.getAttribute("target")) {
+																anchor.target = "_top";
+												}
+								}
+
+								//]]>
+				</script>
+				<input type="hidden" name="hiddenDependentFields" id="hiddenDependentFields" value=""></form>
+                
+                
+                </div> 
+                
+            </div>
+            
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- New Header End --> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Our Service Area Start -->
+<section class="akame-service-area " style="padding-bottom:80px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12"> 
+        <!-- Section Heading -->
+        <div class="section-heading ">
+          <h2 class="text-center" style=" font-size:28px  ">Learn More About MarketDirect</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12"> 
+        <!-- Section Heading -->
+        <div class="section-heading ">
+          
+          <p>Learn how the EFI MarketDirect customer engagement platform can help you evolve your business and empower and excite your customers.</p>
+          <div class="btn-toolbar " data-toggle="buttons" style="justify-content: center;" > 
+            <div style="padding-bottom:25px; padding-right:25px;padding-top:20px;"><a href="https://www.efi.com/library/efi/documents/2122/efi_marketdirect_crossmedia_en_us.pdf" class=" akame-btn" data-animation="fadeInUp" data-delay="700ms" style="color:#ffffff;text-decoration: none;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;background-color:#e9bc26 !important;">Download Brochure</a></div>
+            
+    </div>  
+        </div>
+         
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Our Service Area End --> 
+
+
+
+
+
+<!-- Our Service Area End --> 
+<section style="padding-bottom:50px;" >
+  <div class="container">
+    <div class="row">
+<div class="container" >
+  <div class="border-top mt-3" style="padding-top:50px; "></div>
+</div>
+</div></div></section>
+
+
+
+
+
+<!-- Cant Find Document Area Start -->
+<section class="akame-service-area "  style=" margin-top:25px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12"> 
+          <!-- Section Heading -->
+          <div class="section-heading "  style="margin-bottom:0 !important;">
+            <h3 style="padding-bottom:0; color: #e9bc26;" >Can't Find A Document?
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="row" >
+        <div class="col-12"> 
+          <!-- Section Heading -->
+          <div class="section-heading " style="margin-bottom:0 !important;">
+            
+            <p style="padding-top:0;">Can't find the documentation you are looking for?  <a href="https://www.efi.com/resources/" target="_blank">Click here</a> to access and search our comprehensive resource library.
+            </p>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Cant Find Document Area End -->
+
+
+
+
+
+
+  <!-- Footer Area Start -->
+  <footer class="footer wow fadeInDown" style="background-color: #646468; color:#ffffff; " >
+    <div class="container" style=" padding-top:15px;padding-bottom:10px">
+  <div class="row">
+        <div class="col-lg-8 col-sm-8 footer-links text-left footer-text" style="text-align: left">
+        
+          <p class="footer-text" style="color:#ffffff"><a href="https://www.efi.com/legal/privacy/"  style="color:#ffffff">Privacy Policy</a>  &nbsp;|&nbsp;  <a href="https://www.efi.com/legal/terms-of-use/"  style="color:#ffffff">Terms of Use</a>  &nbsp;|&nbsp;  <a href="https://www.efi.com/about-efi/contact-us/"  style="color:#ffffff">Contact Us</a>
+        <a href="https://www.efi.com/legal/copyright/"  style="color:#ffffff">©2020 Electronics For Imaging, Inc. All Rights Reserved.</a></p> 
+      </div>
+      <div class="col-lg-4 col-sm-4" style="text-align:right;margin-bottom:15px !important;">
+          
+       <a href="https://www.facebook.com/EFIPrint/" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; display: inline-block; margin: 0 6px 0 6px;"><img alt="Facebook Icon" src="https://www.efi.com/library/efi/images/shared/icons/social_media/facebook_icon.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; line-height: 100%; width: 20px; height: auto; display: inline-block; border-width: 0; border-style: none;"></a>
+<a href="https://www.linkedin.com/company/efiprint" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; display: inline-block; margin: 0 6px 0 6px;"><img alt="LinkedIn Icon" src="https://www.efi.com/library/efi/images/shared/icons/social_media/linkedin_icon.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; line-height: 100%; width: 20px; height: auto; display: inline-block; border-width: 0; border-style: none;"></a>
+<a href="https://twitter.com/EFIPrint" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; display: inline-block; margin: 0 6px 0 6px;"><img alt="Twitter Icon" src="https://www.efi.com/library/efi/images/shared/icons/social_media/twitter_icon.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; line-height: 100%; width: 20px; height: auto; display: inline-block; border-width: 0; border-style: none;"></a>
+<a href="https://www.youtube.com/user/EFIDigitalPrintTech" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; display: inline-block; margin: 0 6px 0 6px;"><img alt="Youtube Icon" src="https://go.efi.com/rs/559-INV-406/images/EFI_Social_YouTube.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; line-height: 100%; width: 20px; height: auto; display: inline-block; border-width: 0; border-style: none;"></a>
+<a href="https://www.instagram.com/efiprint/" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-decoration: none; display: inline-block; margin: 0 6px 0 6px;"><img alt="Instagram Icon" src="https://go.efi.com/rs/559-INV-406/images/EFI_Social_Instagram.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%; line-height: 100%; width: 20px; height: auto; display: inline-block; border-width: 0; border-style: none;"></a>
+        
+      </div>
+  </div>
+</div>
+</footer>
+<!-- End Footer Bottom -->
+
+
+<script type="text/javascript">
+  if (typeof MktoForms2 !== 'undefined') {
+      //add a callback to the first ready form on the page
+      MktoForms2.whenReady(function (form) {
+          if (Cookies.get("_mkto_form_submit") != undefined) {
+              //add the tracking field to be submitted
+              form.addHiddenFields({
+                  "_mkt_trk": ""
+              });
+              form.addHiddenFields({
+                  "munchkinId": ""
+              });
+
+              //clear the value during the onSubmit event to prevent tracking association
+              form.onSubmit(function (form) {
+                  form.vals({
+                      "_mkt_trk": ""
+                  });
+                  form.vals({
+                      "munchkinId": ""
+                  });
+        if (Cookies.get("go_efi") != 'y' ||
+          (Cookies.get("go_efi") == 'y' && Cookies.get("go_efi_consent") == "allow")) {
+          Cookies.set("_mkto_form_submit", "yes");
+                  }
+              })
+          } else {
+              //clear the value during the onSubmit event to prevent tracking association
+      form.onSubmit(function (form) {
+        if (Cookies.get("go_efi") != 'y' ||
+          (Cookies.get("go_efi") == 'y' && Cookies.get("go_efi_consent") == "allow")) {
+          Cookies.set("_mkto_form_submit", "yes");
+                }
+              })
+          }
+      })
+  }
+</script>
+
+<!-- All JS Files --> 
+<!-- jQuery --> 
+<script src="js/jquery.min.js"></script> 
+<!-- Popper --> 
+<script src="js/popper.min.js"></script> 
+<!-- Bootstrap --> 
+<script src="js/bootstrap.min.js"></script> 
+<!-- All Plugins --> 
+<script src="js/akame.bundle.js"></script> 
+<!-- Active --> 
+<script src="js/default-assets/active.js"></script>
+
+<script src="//go.efi.com/rs/559-INV-406/images/cookie-consent-popup.js"></script>
+<style>  #PureChatWidget.purechat.purechat-bottom-right {
+  bottom: 70px !important;
+}
+</style>
+<script type="text/javascript" src="https://go.efi.com/js/stripmkttok.js"></script>
+
+</body>
+</html>
