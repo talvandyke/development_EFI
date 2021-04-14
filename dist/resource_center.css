@@ -86,7 +86,7 @@
 }
 	.popular_places_area .single_place .place_info h4 {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: bold;
     color: rgb(233, 188, 38) !important;
     margin-bottom: 0;
     -webkit-transition: 0.3s;
@@ -131,6 +131,10 @@
     color: #ffffff;
     -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
     box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+}
+.resourceType{
+    font-size:12px;
+    font-weight:bold;
 }
 
 .form-control{
